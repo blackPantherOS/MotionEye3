@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -89,4 +89,4 @@ def _do_cleanup():
          
     except Exception as e:
         logging.error('failed to cleanup media files: %(msg)s' % {
-                'msg': unicode(e)}, exc_info=True)
+                'msg': str(e)}, exc_info=True)

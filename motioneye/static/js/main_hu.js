@@ -3522,16 +3522,16 @@ function runLoginDialog(retry) {
                     '<td class="login-dialog-error" colspan="100"></td>' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Username</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">Felhasználónév</span></td>' +
                     '<td class="dialog-item-value"><input type="text" name="username" class="styled" id="usernameEntry" autofocus></td>' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Password</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">Jelszó</span></td>' +
                     '<td class="dialog-item-value"><input type="password" name="password" class="styled" id="passwordEntry"></td>' +
                     '<input type="submit" style="display: none;" name="login" value="login">' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Remember Me</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">Emlékezz rám</span></td>' +
                     '<td class="dialog-item-value"><input type="checkbox" name="remember" class="styled" id="rememberCheck"></td>' +
                 '</tr>' +
             '</table></form>');

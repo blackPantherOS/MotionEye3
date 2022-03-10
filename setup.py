@@ -1,3 +1,11 @@
+# Python3 version:
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
+#
+#  - CODE BASED ON Calin Crisan <ccrisan@gmail.com> works -
+#
+# Authors: 
+#    Chareles K Barcza <kbarcza@blackpanther.hu>
+#    Miklos Horvath <hmiki@blackpanther.hu>
 
 import os.path
 
@@ -9,10 +17,10 @@ import motioneye
 
 
 here = os.path.abspath(os.path.dirname(__file__))
-name = 'motioneye'
+name = 'motioneye3'
 version = motioneye.VERSION
 
-with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 
@@ -37,13 +45,13 @@ setup(
     name=name,
     version=version,
 
-    description='motionEye server',
+    description='motionEye3 server',
     long_description=long_description,
 
-    url='https://github.com/ccrisan/motioneye/',
+    url='https://github.com/blackPantherOS/motionEye3/',
 
-    author='Calin Crisan',
-    author_email='ccrisan@gmail.com',
+    author='Charles K Barcza (Py3) based on Calin Crisan work',
+    author_email='info@blackpanther.hu',
 
     license='GPLv3',
 
@@ -55,15 +63,15 @@ setup(
 
         'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
 
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7'
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.11'
     ],
 
     keywords='motion video surveillance frontend',
 
     packages=['motioneye'],
 
-    install_requires=['tornado>=3.1', 'jinja2', 'pillow', 'pycurl'],
+    install_requires=['tornado>=5.1,<6', 'jinja2', 'pillow', 'pycurl'],
 
     package_data={
         'motioneye': [

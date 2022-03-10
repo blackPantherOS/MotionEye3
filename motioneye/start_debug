@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
+
+mkdir -p /etc/motioneye
+mkdir -p /var/lib/motioneye
+
+python3 meyectl.py startserver -d

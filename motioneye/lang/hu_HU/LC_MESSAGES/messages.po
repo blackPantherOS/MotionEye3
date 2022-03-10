@@ -1,0 +1,1774 @@
+# Hungarian (Hungary) translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: motionEye3 Hungarian\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-10 02:24+0100\n"
+"PO-Revision-Date: 2022-03-10 01:11+0100\n"
+"Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
+"Language-Team: blackPanther Europe\n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 2.4.3\n"
+
+#: template.py:51
+#, python-format
+msgid "load : %s langs: %s"
+msgstr "betöltés : %s nyelvek: %s"
+
+#: utils.py:77 utils.py:116
+msgid "never"
+msgstr "soha"
+
+#: utils.py:168
+msgid "day"
+msgstr "nap"
+
+#: utils.py:171
+msgid "week"
+msgstr "hét"
+
+#: utils.py:174
+msgid "month"
+msgstr "hónap"
+
+#: utils.py:177
+msgid "year"
+msgstr "év"
+
+#: templates/main.html:750 templates/main.html:863 utils.py:180
+msgid "days"
+msgstr "nap"
+
+#: utils.py:184
+msgid "hour"
+msgstr "óra"
+
+#: utils.py:187
+msgid "hours"
+msgstr "óra"
+
+#: utils.py:191
+msgid "minute"
+msgstr "perc"
+
+#: utils.py:194
+msgid "minutes"
+msgstr "percenként"
+
+#: utils.py:198
+msgid "second"
+msgstr "második"
+
+#: templates/main.html:731 templates/main.html:844 templates/main.html:919
+#: templates/main.html:1041 templates/main.html:1069 utils.py:201 utils.py:204
+msgid "seconds"
+msgstr "másodperc"
+
+#: utils.py:208
+msgid "minus"
+msgstr "mínusz"
+
+#: static/js/main.js:3525 templates/main.html:487
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: static/js/main.js:3529 templates/main.html:492
+msgid "Password"
+msgstr "Jelszó"
+
+#: static/js/main.js:3534
+msgid "Remember Me"
+msgstr "Emlékezz rám"
+
+#: templates/main.html:109
+msgid "user preferences"
+msgstr "felhasználói beállítások"
+
+#: templates/main.html:110
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: templates/main.html:115
+msgid "Layout Columns"
+msgstr "Oszlopok rendezése"
+
+#: templates/main.html:117
+msgid "configures the number of columns used to lay out the camera frames"
+msgstr "konfigurálja a kamerakockák elrendezéséhez használt oszlopok számát"
+
+#: templates/main.html:120
+msgid "Fit Frames Vertically"
+msgstr "Függőleges illesztés"
+
+#: templates/main.html:122
+msgid ""
+"controls whether frame sizes can be reduced to vertically fit the window or "
+"not"
+msgstr ""
+"szabályozza, hogy a keret mérete csökkenthető-e, hogy függőlegesen "
+"illeszkedjen az ablakhoz"
+
+#: templates/main.html:125
+msgid "Layout Rows"
+msgstr "Sorok rendezése"
+
+#: templates/main.html:127
+msgid "configures the number of rows used to lay out the camera frames"
+msgstr "konfigurálja a kameraképek elrendezéséhez használt sorok számát"
+
+#: templates/main.html:130
+msgid "Frame Rate Dimmer"
+msgstr "Képkocka száma"
+
+#: templates/main.html:132
+msgid ""
+"dims the global frame rate to save network bandwidth and traffic (does "
+"notwork on simple MJPEG cameras)"
+msgstr ""
+"csökkenti a globális képkockasebességet a hálózati sávszélesség és forgalom "
+"megtakarítása érdekében (egyszerű MJPEG kamerákon nem működik)"
+
+#: templates/main.html:135
+msgid "Resolution Dimmer"
+msgstr "Felbontás"
+
+#: templates/main.html:137
+msgid ""
+"dims the actual resolution of all cameras to save network bandwidth and "
+"traffic (does notwork on simple MJPEG cameras)"
+msgstr ""
+"csökkenti az összes kamera tényleges felbontását, hogy megtakarítsa a "
+"hálózati sávszélességet és a forgalmat (egyszerű MJPEG kamerákon nem működik)"
+
+#: templates/main.html:147
+msgid "general settings, not related to any camera"
+msgstr "általános beállítások, nem kapcsolódnak egyetlen kamerához sem"
+
+#: templates/main.html:148
+msgid "General Settings"
+msgstr "Általános beállítások"
+
+#: templates/main.html:153
+msgid "Admin Username"
+msgstr "Admin neve"
+
+#: templates/main.html:155
+msgid "the username to be used for configuring the system"
+msgstr "a felhasználó neve a rendszer konfigurálásához"
+
+#: templates/main.html:158
+msgid "Admin Password"
+msgstr "Admin jelszó"
+
+#: templates/main.html:160
+msgid "administrator password"
+msgstr "adminisztrátor jelszava"
+
+#: templates/main.html:163
+msgid "Viewer Username"
+msgstr "Megtekintő neve"
+
+#: templates/main.html:165
+msgid "the username to be used for video surveillance"
+msgstr "a felhasználó neve a videomegfigyeléshez"
+
+#: templates/main.html:168
+msgid "Viewer Password"
+msgstr "Megtekintő jelszava"
+
+#: templates/main.html:170
+msgid ""
+"the password for the surveillance user (leave empty for passwordless "
+"surveillance)"
+msgstr ""
+"a felügyeleti felhasználó jelszava (jelszó nélküli felügyelet esetén hagyja "
+"üresen)"
+
+#: templates/main.html:179
+msgid "motionEye Version"
+msgstr "motionEye3 verzió"
+
+#: templates/main.html:183
+msgid "Motion Version"
+msgstr "Motion verzió"
+
+#: templates/main.html:187
+msgid "OS Version"
+msgstr "OS verziója"
+
+#: templates/main.html:192
+msgid "Software Update"
+msgstr "Szoftverfrissítés"
+
+#: templates/main.html:193
+msgid "Check"
+msgstr "Ellenőrzés"
+
+#: templates/main.html:194
+msgid "checks for new versions and performs updates"
+msgstr "ellenőrzi az új verziókat és végrehajtja a frissítéseket"
+
+#: templates/main.html:198
+msgid "Power"
+msgstr "Energia"
+
+#: templates/main.html:199
+msgid "Shut Down"
+msgstr "Leállítás"
+
+#: templates/main.html:200
+msgid "shuts down the system"
+msgstr "a rendszer leállítása"
+
+#: templates/main.html:204
+msgid "Reboot"
+msgstr "Újraindítás"
+
+#: templates/main.html:205
+msgid "reboots the system"
+msgstr "a rendszer újraindítása"
+
+#: templates/main.html:211
+msgid "Configuration"
+msgstr "Beállítás"
+
+#: templates/main.html:212
+msgid "Backup"
+msgstr "Mentés"
+
+#: templates/main.html:213
+msgid ""
+"creates a file with the current configuration for you to save it locally"
+msgstr ""
+"létrehoz egy fájlt az aktuális konfigurációval, hogy azt helyileg elmentse"
+
+#: templates/main.html:217
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: templates/main.html:218
+msgid "restores the configuration from a previously saved backup file"
+msgstr ""
+"visszaállítja a konfigurációt egy korábban mentett biztonsági mentési fájlból"
+
+#: templates/main.html:246
+msgid "enable this if you want to use this camera device"
+msgstr "engedélyezze ezt, ha használni szeretné ezt a kamerát"
+
+#: templates/main.html:247
+msgid "Video Device"
+msgstr "Videoeszköz"
+
+#: templates/main.html:252 templates/main.html:570 templates/main.html:587
+msgid "Camera Name"
+msgstr "Kamera neve"
+
+#: templates/main.html:254
+msgid "an alias for this camera device"
+msgstr "ennek a kameraeszköznek az álneve"
+
+#: templates/main.html:257
+msgid "Camera ID"
+msgstr "Kamera ID"
+
+#: templates/main.html:259
+msgid "the camera identifier number"
+msgstr "a kamera azonosító számát"
+
+#: templates/main.html:262
+msgid "Camera Device"
+msgstr "Kameraeszköz"
+
+#: templates/main.html:266
+msgid "Camera Type"
+msgstr "Kamera típusa"
+
+#: templates/main.html:273
+msgid "Automatic Brightness"
+msgstr "Automatikus fényerő"
+
+#: templates/main.html:275
+msgid ""
+"enables software automatic brightness (only recommended for cameras without "
+"autobrightness)"
+msgstr ""
+"szoftveres automatikus fényerőt tesz lehetővé (csak automatikus fényerő "
+"nélküli kamerákhoz ajánlott)"
+
+#: templates/main.html:281
+msgid "Video Resolution"
+msgstr "Videó felbontás"
+
+#: templates/main.html:286
+msgid ""
+"the video resolution (larger values produce better quality but require more "
+"CPU power, larger storage space and bandwidth)"
+msgstr ""
+"a videó felbontása (a nagyobb értékek jobb minőséget eredményeznek, de több "
+"CPU-teljesítményt, nagyobb tárhelyet és sávszélességet igényelnek)"
+
+#: templates/main.html:289
+msgid "Width"
+msgstr "Bitek"
+
+#: templates/main.html:291
+msgid "enter a custom resolution width"
+msgstr "adja meg az egyéni felbontás szélességét"
+
+#: templates/main.html:294
+msgid "Height"
+msgstr "Magasság"
+
+#: templates/main.html:296
+msgid "enter a custom resolution height"
+msgstr "adja meg egy egyéni felbontás magasságát"
+
+#: templates/main.html:299
+msgid "Video Rotation"
+msgstr "Videoforgatás"
+
+#: templates/main.html:308
+msgid ""
+"use this to rotate the captured image, if your camera is not positioned "
+"correctly"
+msgstr ""
+"ezzel elforgathatja a rögzített képet, ha a kamera nincs megfelelően "
+"elhelyezve"
+
+#: templates/main.html:311
+msgid "Frame Rate"
+msgstr "Képsebesség"
+
+#: templates/main.html:313
+msgid ""
+"sets the number of frames captured by the camera every second (higher values "
+"produce smoother videos but require more CPU power, larger storage space and "
+"bandwidth)"
+msgstr ""
+"beállítja a kamera által másodpercenként rögzített képkockák számát (nagyobb "
+"értékek simább videókat eredményeznek, de több CPU-teljesítményt, nagyobb "
+"tárhelyet és sávszélességet igényelnek)"
+
+#: templates/main.html:319
+msgid "Privacy Mask"
+msgstr "Adatvédelmi maszk"
+
+#: templates/main.html:321
+msgid ""
+"enables image masking to prevent some image areas from being recorded to "
+"protect privacy"
+msgstr ""
+"lehetővé teszi a képmaszkolást, hogy megakadályozza bizonyos képterületek "
+"rögzítését a magánélet védelme érdekében"
+
+#: templates/main.html:326 templates/main.html:963
+msgid "Edit Mask"
+msgstr "Szerkesztés"
+
+#: templates/main.html:327 templates/main.html:964
+msgid "Save Mask"
+msgstr "Mentés"
+
+#: templates/main.html:330 templates/main.html:967
+msgid "click this button to enable/disable the mask editor"
+msgstr ""
+"kattintson erre a gombra a maszkszerkesztő engedélyezéséhez/letiltásához"
+
+#: templates/main.html:334 templates/main.html:971
+msgid "Clear Mask"
+msgstr "Maszk törlése"
+
+#: templates/main.html:335 templates/main.html:972
+msgid "click this button to clear the current mask"
+msgstr "kattintson ide a maszkterületek törléséhez."
+
+#: templates/main.html:341
+msgid "Extra Motion Options"
+msgstr "Extra Motion opciók"
+
+#: templates/main.html:343
+msgid ""
+"you can add here any extra options for the motion daemon (use the &quot;name "
+"value&quot; format, one option per line)"
+msgstr ""
+"itt hozzáadhat további opciókat a motion háttérprogramhoz (használja a &quot;"
+"névérték&quot; formátumot, soronként egy opciót)"
+
+#: templates/main.html:352
+msgid "choose where and how your media files are saved"
+msgstr "válassza ki a médiafájlok mentési helyét és módját"
+
+#: templates/main.html:353
+msgid "File Storage"
+msgstr "Adattároló"
+
+#: templates/main.html:358
+msgid "Storage Device"
+msgstr "Tárolóeszköz"
+
+#: templates/main.html:363
+msgid ""
+"indicates the storage device where the image and video files will be saved"
+msgstr ""
+"azt a tárolóeszközt jelöli, amelyre a kép- és videofájlok mentésre kerülnek"
+
+#: templates/main.html:366
+msgid "Network Server"
+msgstr "Hálózati kiszolgáló"
+
+#: templates/main.html:368
+msgid "the address of the network server (IP address or hostname)"
+msgstr "a hálózati kiszolgáló címe (IP-cím vagy gazdagépnév)"
+
+#: templates/main.html:371
+msgid "SMB Protocol Version"
+msgstr "SMB-protokoll verzió"
+
+#: templates/main.html:381
+msgid ""
+"selects the SMB version to be used (test the various options and see which "
+"one works best with your NAS)"
+msgstr ""
+"kiválasztja a használni kívánt SMB-verziót (próbálja ki a különböző "
+"opciókat, és nézze meg, melyik működik a legjobban a NAS-szal)"
+
+#: templates/main.html:384
+msgid "Share Name"
+msgstr "Megosztás neve"
+
+#: templates/main.html:386
+msgid "the name of the network share"
+msgstr "a hálózati megosztás neve"
+
+#: templates/main.html:389
+msgid "Share Username"
+msgstr "Megosztás felhasználója"
+
+#: templates/main.html:391
+msgid ""
+"the username to be supplied when accessing the network share (leave empty if "
+"no username is required)"
+msgstr ""
+"a hálózati megosztás elérésekor megadandó felhasználónév (ha nincs szükség "
+"felhasználónévre, hagyja üresen)"
+
+#: templates/main.html:394
+msgid "Share Password"
+msgstr "Megosztás jelszava"
+
+#: templates/main.html:396
+msgid ""
+"the password required by the network share (leave empty if no password is "
+"required)"
+msgstr ""
+"a hálózati megosztáshoz szükséges jelszó (ha nincs szükség jelszóra, hagyja "
+"üresen)"
+
+#: templates/main.html:399
+msgid "Root Directory"
+msgstr "Gyökérmappa"
+
+#: templates/main.html:401
+msgid ""
+"the root path (on the selected storage device) where the files will be saved"
+msgstr ""
+"a gyökér elérési útja (a kiválasztott tárolóeszközön), ahová a fájlok "
+"mentésre kerülnek"
+
+#: templates/main.html:405
+msgid "Test Share"
+msgstr "Próba megosztás"
+
+#: templates/main.html:406
+msgid ""
+"click this button to test the network share connectivity after you have "
+"filled in the required details"
+msgstr ""
+"kattintson erre a gombra a hálózati megosztási kapcsolat teszteléséhez, "
+"miután kitöltötte a szükséges adatokat"
+
+#: templates/main.html:412
+msgid "Disk Usage"
+msgstr "Lemezhasználat"
+
+#: templates/main.html:416
+msgid "the used/total size of the disk where the root directory resides"
+msgstr ""
+"annak a lemeznek a felhasznált/teljes mérete, ahol a gyökérkönyvtár található"
+
+#: templates/main.html:422
+msgid "Upload Media Files"
+msgstr "Médiafájlok feltöltése"
+
+#: templates/main.html:424
+msgid ""
+"enable this if you want your media files to be uploaded to an external "
+"service"
+msgstr ""
+"engedélyezze ezt, ha azt szeretné, hogy médiafájljait külső szolgáltatásba "
+"töltse fel"
+
+#: templates/main.html:427
+msgid "Upload Pictures"
+msgstr "Képek feltöltése"
+
+#: templates/main.html:429
+msgid "enable this if you want pictures to be uploaded to an external service"
+msgstr "engedélyezze, ha képeket szeretne feltölteni egy külső szolgáltatásba"
+
+#: templates/main.html:432
+msgid "Upload Movies"
+msgstr "Felvételek feltöltése"
+
+#: templates/main.html:434
+msgid "enable this if you want videos to be uploaded to an external service"
+msgstr ""
+"engedélyezze ezt, ha azt szeretné, hogy a videókat külső szolgáltatásba "
+"töltsék fel"
+
+#: templates/main.html:437
+msgid "Upload Service"
+msgstr "Feltöltési szolgáltatás"
+
+#: templates/main.html:440
+msgid "FTP Server"
+msgstr "FTP-kiszolgáló"
+
+#: templates/main.html:441
+msgid "SFTP Server"
+msgstr "SFTP-kiszolgáló"
+
+#: templates/main.html:444
+msgid "Google Drive"
+msgstr "Google Drive"
+
+#: templates/main.html:445
+msgid "Google Photo"
+msgstr "Google Fotók"
+
+#: templates/main.html:446
+msgid "Dropbox"
+msgstr "Gyűjtődoboz"
+
+#: templates/main.html:449
+msgid "choose a service to which the media files should be uploaded"
+msgstr "válasszon egy szolgáltatást, amelyhez a médiafájlokat feltölti"
+
+#: templates/main.html:452
+msgid "Server Address"
+msgstr "A kiszolgáló címe"
+
+#: templates/main.html:454
+msgid ""
+"the domain name or IP address of the server (e.g. ftp.example.com or "
+"192.168.1.3)"
+msgstr ""
+"a szerver domain neve vagy IP-címe (pl. ftp.mintaszerver.hu vagy 192.168.1.3)"
+
+#: templates/main.html:457
+msgid "Server Port"
+msgstr "Port"
+
+#: templates/main.html:459
+msgid ""
+"the port to use when connecting to the service (leave it empty to use the "
+"default value)"
+msgstr ""
+"a szolgáltatáshoz való csatlakozáskor használandó port (hagyja üresen az "
+"alapértelmezett érték használatához)"
+
+#: templates/main.html:462
+msgid "Method"
+msgstr "Mód"
+
+#: templates/main.html:469
+msgid "the HTTP method to use when uploading files"
+msgstr "a fájlok feltöltésekor használandó HTTP-módszer"
+
+#: templates/main.html:472
+msgid "Location"
+msgstr "Elhelyezkedés"
+
+#: templates/main.html:474
+msgid ""
+"the location (root path) where media files should be uploaded (e.g. /files/"
+"cam1/)"
+msgstr ""
+"a hely (gyökér elérési útja), ahová a médiafájlokat fel kell tölteni (pl. /"
+"fájlok/Kamera1/)"
+
+#: templates/main.html:477
+msgid "Include Subfolders"
+msgstr "Beleértve az almappákat is"
+
+#: templates/main.html:479
+msgid ""
+"enable this to upload the media files together with their subfolders, "
+"instead of placing them directly into the root location"
+msgstr ""
+"engedélyezze, hogy a médiafájlokat almappáikkal együtt töltse fel, ahelyett, "
+"hogy közvetlenül a gyökérbe helyezné őket"
+
+#: templates/main.html:482
+msgid "Clean Cloud"
+msgstr "Felhő tisztítása"
+
+#: templates/main.html:484
+msgid ""
+"enable this to delete the uploaded media files on cloud as well when the "
+"local media files get deleted according to file persistence setting, "
+"currently this option is available only for gdrive"
+msgstr ""
+"Engedélyezze a feltöltött médiafájlok törlését a felhőben is, amikor a helyi "
+"médiafájlok törlésre kerülnek a fájlmegmaradási beállításoknak megfelelően, "
+"jelenleg ez az opció csak a gdrive esetén érhető el"
+
+#: templates/main.html:489
+msgid "the username for the upload service account"
+msgstr "felhasználónév a feltöltési szolgáltatási fiókhoz"
+
+#: templates/main.html:494
+msgid "the password for the upload service account"
+msgstr "jelszó a feltöltési szolgáltatás fiókhoz"
+
+#: templates/main.html:497
+msgid "Authorization Key"
+msgstr "Hitelesítőkulcs"
+
+#: templates/main.html:499
+msgid ""
+"the key used to authenticate with the upload service (normally required only "
+"during setup)"
+msgstr ""
+"a feltöltési szolgáltatással történő hitelesítéshez használt kulcs "
+"(általában csak a beállítás során szükséges)"
+
+#: templates/main.html:505
+msgid "Obtain Key"
+msgstr "Kulcs bekérése"
+
+#: templates/main.html:508
+msgid "click here to obtain the service authorization key"
+msgstr ""
+"kattintson ide a szolgáltatás hitelesítéséhez szükséges kulcs beszerzéséhez"
+
+#: templates/main.html:512
+msgid "Test Service"
+msgstr "Teszt szolgáltatás"
+
+#: templates/main.html:513
+msgid ""
+"click this button to test the upload service after you have filled in the "
+"required details"
+msgstr ""
+"kattintson erre a gombra a feltöltési szolgáltatás teszteléséhez, miután "
+"kitöltötte a szükséges adatokat"
+
+#: templates/main.html:519 templates/main.html:1080
+msgid "Call A Web Hook"
+msgstr "Webhook meghívása"
+
+#: templates/main.html:521
+msgid ""
+"enable this if you want a URL to be requested after a media file is created"
+msgstr ""
+"engedélyezze ezt, ha azt szeret a médiafájl létrehozása után URL-t kérni"
+
+#: templates/main.html:524 templates/main.html:1085
+msgid "Web Hook URL"
+msgstr "Webhook URL"
+
+#: templates/main.html:526
+#, python-format
+msgid ""
+"a URL to be requested when motion is detected; the following special tokens "
+"are accepted: %Y = year, %m = month, %d = day, %H = hour, %M = minute, %S = "
+"second, %q = frame number, %v = event number, %f = file path"
+msgstr ""
+"a mozgás észlelésekor kérendő URL; a következő speciális tokeneket fogadjuk "
+"el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, %S = másodperc, %q = "
+"képkocska szám, %v = eseményszám, % f = fájl elérési útja"
+
+#: templates/main.html:529 templates/main.html:1090
+msgid "HTTP Method"
+msgstr "HTTP eljárás"
+
+#: templates/main.html:538 templates/main.html:1099
+msgid ""
+"the HTTP method to use when requesting the web hook URL (the given URL-"
+"encoded parameters will in fact be transmitted as indicated here)"
+msgstr ""
+"a HTTP müdszer a webhook URL kérésekor (az adott URL-kódolás paraméterei "
+"valójában az itt jelzett módon kerülnek továbbításra)"
+
+#: templates/main.html:544 templates/main.html:1105
+msgid "Run A Command"
+msgstr "Parancs futtatása"
+
+#: templates/main.html:546
+msgid ""
+"enable this if you want to execute a command after a media file is created"
+msgstr ""
+"engedélyezze ezt, ha egy médiafájl létrehozása után parancsot szeretne "
+"végrehajtani"
+
+#: templates/main.html:549 templates/main.html:1110 templates/main.html:1123
+msgid "Command"
+msgstr "Parancs"
+
+#: templates/main.html:551
+#, python-format
+msgid ""
+"a command to be executed after a media file is created; multiple commands "
+"can be separated by a semicolon; do not use semicolons inside commands; the "
+"following special tokens are accepted: %Y = year, %m = month, %d = day, %H = "
+"hour, %M = minute, %S = second, %q = frame number, %v = event number, %f = "
+"file path"
+msgstr ""
+"egy médiafájl létrehozása után végrehajtandó parancs; több parancs "
+"pontosvesszővel elválasztható; de ne használjon pontosvesszőt a parancsokon "
+"belül; a következő speciális tokeneket fogadjuk el: %Y = év, %m = hónap, %d "
+"= nap, %H = óra, %M = perc, %S = másodperc, %q = keretszám, %v = "
+"eseményszám, % f = fájl elérési útja"
+
+#: templates/main.html:561
+msgid "choose what information is displayed on the captured frames"
+msgstr ""
+"válassza ki, hogy milyen információk jelenjenek meg a rögzített képkockákon"
+
+#: templates/main.html:562
+msgid "Text Overlay"
+msgstr "Fedőszöveg"
+
+#: templates/main.html:567
+msgid "Left Text"
+msgstr "Bal-szöveg"
+
+#: templates/main.html:571 templates/main.html:588
+msgid "Timestamp"
+msgstr "Időbélyeg"
+
+#: templates/main.html:572 templates/main.html:589
+msgid "Custom Text"
+msgstr "Egyéni szöveg"
+
+#: templates/main.html:573 templates/main.html:590 templates/main.html:647
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: templates/main.html:576
+msgid ""
+"sets the text displayed on the movies and images, on the lower left corner"
+msgstr ""
+"beállítja a felvételeken és a képeken megjelenő szöveget a bal alsó sarokban"
+
+#: templates/main.html:581
+#, python-format
+msgid ""
+"sets a custom left text; the following special tokens are accepted: %Y = "
+"year, %m = month, %d = day, %H = hour, %M = minute, %S = second, %q = frame "
+"number, %v = event number, %T = HH:MM:SS, \n"
+" = new line"
+msgstr ""
+"egyéni bal oldali szöveget állít be; a következő speciális tokeneket "
+"fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, %S = "
+"másodperc, %q = keretszám, %v = eseményszám, %T = HH:MM:SS,\n"
+"  = új sor"
+
+#: templates/main.html:584
+msgid "Right Text"
+msgstr "Jobb-szöveg"
+
+#: templates/main.html:593
+msgid ""
+"sets the text displayed on the movies and images, on the lower right corner"
+msgstr ""
+"beállítja a felvételeken és a képeken megjelenő szöveget a jobb alsó sarokban"
+
+#: templates/main.html:598
+#, python-format
+msgid ""
+"sets a custom right text; the following special tokens are accepted: %Y = "
+"year, %m = month, %d = day, %H = hour, %M = minute, %S = second, %q = frame "
+"number, %v = event number, %T = HH:MM:SS, \n"
+" = new line"
+msgstr ""
+"egyéni jobboldali szöveget állít be; a következő speciális tokeneket "
+"fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, %S = "
+"másodperc, %q = keretszám, %v = eseményszám, %T = HH:MM:SS,\n"
+"  = új sor"
+
+#: templates/main.html:601
+msgid "Text Scale"
+msgstr "Szöveg méretezése"
+
+#: templates/main.html:603
+msgid "sets the size of the overlay text"
+msgstr "beállítja a fedőszöveg méretét"
+
+#: templates/main.html:613
+msgid "enable this if you want video streaming for this camera"
+msgstr "engedélyezze ezt, ha videoközvetítést szeretne ehhez a kamerához"
+
+#: templates/main.html:614
+msgid "Video Streaming"
+msgstr "Videoközvetítés"
+
+#: templates/main.html:619
+msgid "Streaming Frame Rate"
+msgstr "Közvetítés FPS értéke"
+
+#: templates/main.html:621
+msgid ""
+"sets the number of frames transmitted every second on the live streaming"
+msgstr ""
+"beállítja az élő közvetítésben másodpercenként továbbított képkockák számát"
+
+#: templates/main.html:624
+msgid "Streaming Quality"
+msgstr "Közvetítés minősége"
+
+#: templates/main.html:626
+msgid ""
+"sets the live streaming quality (higher values produce a better video "
+"quality but require more bandwidth)"
+msgstr ""
+"beállítja az élő közvetítés minőségét (a magasabb értékek jobb "
+"videóminőséget eredményeznek, de nagyobb sávszélességet igényelnek)"
+
+#: templates/main.html:629
+msgid "Streaming Image Resizing"
+msgstr "Közvetített kép átméretezése"
+
+#: templates/main.html:631
+msgid ""
+"when this is enabled, the images are resized before they are sent to the "
+"browser (disable when running on a slow CPU)"
+msgstr ""
+"ha ez be van kapcsolva, a képek átméretezésre kerülnek, mielőtt elküldenék "
+"őket a böngészőnek (lassú CPU-n történő futtatáskor letiltja)"
+
+#: templates/main.html:634
+msgid "Streaming Resolution"
+msgstr "Közvetítés felbontása"
+
+#: templates/main.html:636
+msgid ""
+"the streaming resolution given as percent of the video device resolution "
+"(higher values produce better video quality but require more bandwidth)"
+msgstr ""
+"a streamelési felbontás a videoeszköz felbontásának százalékában (nagyobb "
+"érték jobb videóminőséget eredményez, de nagyobb sávszélességet igényel)"
+
+#: templates/main.html:639
+msgid "Streaming Port"
+msgstr "Közvetítés portja"
+
+#: templates/main.html:641
+msgid "sets the TCP port on which the webcam streaming server listens"
+msgstr ""
+"beállítja azt a TCP portot, amelyen a webkamera streaming szerver figyel"
+
+#: templates/main.html:644
+msgid "Authentication Mode"
+msgstr "Hitelesítés módja"
+
+#: templates/main.html:648
+msgid "Basic"
+msgstr "Alap"
+
+#: templates/main.html:649
+msgid "Digest"
+msgstr "Ellenőrző összeg"
+
+#: templates/main.html:652
+msgid ""
+"the authentication method used by the stream (choose Basic instead of Digest "
+"if you encounter issues with third party apps); surveillance credentials "
+"will be used"
+msgstr ""
+"az adatfolyam által használt hitelesítési módszer (ha harmadik féltől "
+"származó alkalmazásaival kapcsolatos problémákat tapasztal, válassza az "
+"Alapszintet a Digest helyett); felügyeleti hitelesítő adatokat fognak "
+"használni"
+
+#: templates/main.html:655
+msgid "Motion Optimization"
+msgstr "Motion optimalizáció"
+
+#: templates/main.html:657
+msgid ""
+"enable this if you want a lower frame rate for the live streaming when no "
+"motion is detected"
+msgstr ""
+"engedélyezze, ha alacsonyabb képkockasebességet szeretne az élő "
+"közvetítéshez, amikor nem érzékel mozgást"
+
+#: templates/main.html:663
+msgid "Useful URLs"
+msgstr "Hasznos url-ek"
+
+#: templates/main.html:666
+msgid "Snapshot URL"
+msgstr "Pillanatkép URLje"
+
+#: templates/main.html:669
+msgid ""
+"a URL that provides a JPEG image with the most recent snapshot of the camera"
+msgstr ""
+"egy URL, amely egy JPEG-képet biztosít a kamera legfrissebb pillanatképével"
+
+#: templates/main.html:675
+msgid "Streaming URL"
+msgstr "Közvetítés URL-je"
+
+#: templates/main.html:678
+msgid "a URL that provides a MJPEG stream of the camera"
+msgstr "URL, amely a kamera MJPEG adatfolyamát biztosítja"
+
+#: templates/main.html:684
+msgid "Embed URL"
+msgstr "Beágyazás URL-je"
+
+#: templates/main.html:687
+msgid ""
+"a URL that provides a minimal HTML document containing the camera frame, "
+"ready to be embedded"
+msgstr ""
+"URL, amely egy minimális HTML-dokumentumot biztosít, amely tartalmazza a "
+"kamera keretét, és készen áll a beágyazásra"
+
+#: templates/main.html:697
+msgid "enable this if you want to capture still images (pictures)"
+msgstr "engedélyezze, ha állóképeket (képeket) szeretne rögzíteni"
+
+#: templates/main.html:698
+msgid "Still Images"
+msgstr "Képek megtartása"
+
+#: templates/main.html:703
+msgid "Image File Name"
+msgstr "Képfájl neve"
+
+#: templates/main.html:705
+#, python-format
+msgid ""
+"sets the name pattern for the image (JPEG) files; the following special "
+"tokens are accepted: %Y = year, %m = month, %d = day, %H = hour, %M = "
+"minute, %S = second, %q = frame number, %v = event number, / = subfolder"
+msgstr ""
+"beállítja a képfájlok (JPEG) névmintáját; a következő speciális tokeneket "
+"fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, %S = "
+"másodperc, %q = képkocka szám, %v = eseményszám, / = almappa"
+
+#: templates/main.html:708
+msgid "Image Quality"
+msgstr "Képminőség"
+
+#: templates/main.html:710
+msgid ""
+"sets the JPEG image quality (higher values produce a better image quality "
+"but require more storage space)"
+msgstr ""
+"beállítja a JPEG képminőséget (a magasabb értékek jobb képminőséget "
+"eredményeznek, de több tárhelyet igényelnek)"
+
+#: templates/main.html:713
+msgid "Capture Mode"
+msgstr "Rögzítés módja"
+
+#: templates/main.html:716 templates/main.html:836
+msgid "Motion Triggered"
+msgstr "Mozgás aktiválja"
+
+#: templates/main.html:717
+msgid "Motion Triggered (One Picture)"
+msgstr "Mozgás aktiválja (Egy kép)"
+
+#: templates/main.html:718
+msgid "Interval Snapshots"
+msgstr "Pillanatkép időköze"
+
+#: templates/main.html:719
+msgid "All Frames"
+msgstr "Minden képkocka"
+
+#: templates/main.html:720
+msgid "Manual"
+msgstr "Kézi"
+
+#: templates/main.html:723
+msgid ""
+"sets the image capture mode:\n"
+"                                    Motion Triggered = an image captured "
+"whenever motion is detected,\n"
+"                                    Interval Snapshots = an image captured "
+"every x seconds,\n"
+"                                    All Frames = saves each frame to an "
+"image file,\n"
+"                                    Manual = manual snapshots using snapshot "
+"button"
+msgstr ""
+"beállítja a képrögzítési módot:\n"
+"                                     Mozgásérzékelés = mozgás érzékelésekor "
+"rögzített kép,\n"
+"                                     Pillanatkép időköz = x másodpercenként "
+"készült kép,\n"
+"                                     Minden képkocka = minden keretet elment "
+"egy képfájlba,\n"
+"                                     Kézi = manuális pillanatfelvételek a "
+"pillanatfelvétel gombbal"
+
+#: templates/main.html:730
+msgid "Snapshot Interval"
+msgstr "Pillanatkép Időköze"
+
+#: templates/main.html:732
+msgid "sets the interval (in seconds) for the snapshots"
+msgstr "beállítja a pillanatképek időközét (másodpercben)."
+
+#: templates/main.html:735
+msgid "Preserve Pictures"
+msgstr "Képek megörzése"
+
+#: templates/main.html:738 templates/main.html:851
+msgid "For One Day"
+msgstr "Egy napig"
+
+#: templates/main.html:739 templates/main.html:852
+msgid "For One Week"
+msgstr "Egy hétig"
+
+#: templates/main.html:740 templates/main.html:853
+msgid "For One Month"
+msgstr "Egy hónapig"
+
+#: templates/main.html:741 templates/main.html:854
+msgid "For One Year"
+msgstr "Egy évig"
+
+#: templates/main.html:742 templates/main.html:855
+msgid "Forever"
+msgstr "Örökre"
+
+#: templates/main.html:743 templates/main.html:856
+msgid "Custom"
+msgstr "Egyéni"
+
+#: templates/main.html:746
+msgid ""
+"images older than the specified duration are automatically deleted to free "
+"up storage space"
+msgstr ""
+"a megadott időtartamnál régebbi képek automatikusan törlődnek, hogy "
+"tárhelyet szabadítsanak fel"
+
+#: templates/main.html:749
+msgid "Pictures Lifetime"
+msgstr "Képek élettartama"
+
+#: templates/main.html:751
+msgid ""
+"sets the number of days after which the pictures will be deleted "
+"automatically"
+msgstr "beállítja a napok számát, amely után a képek automatikusan törlődnek"
+
+#: templates/main.html:754
+msgid "Enable Manual Snapshots"
+msgstr "Kézi pillanatképek készítése"
+
+#: templates/main.html:756
+msgid ""
+"when this is enabled, a button on the camera frame will allow you to "
+"manually take snapshots"
+msgstr ""
+"amikor ez be van kapcsolva, a kamerakép keretén található gomb segítségével "
+"manuálisan készíthet pillanatfelvételeket"
+
+#: templates/main.html:766
+msgid "enable this if you want to record movies"
+msgstr "engedélyezze ezt, ha szeretne rögzíteni a felvételeket"
+
+#: templates/main.html:767
+msgid "Movies"
+msgstr "Videofelvételek"
+
+#: templates/main.html:772
+msgid "Movie File Name"
+msgstr "Videofájl neve"
+
+#: templates/main.html:774
+#, python-format
+msgid ""
+"sets the name pattern for the movie files; the following special tokens are "
+"accepted: %Y = year, %m = month, %d = day, %H = hour, %M = minute, %S = "
+"second, %q = frame number, %v = event number, / = subfolder"
+msgstr ""
+"beállítja a fájlnevek mintáját a videókhoz; a következő speciális tokeneket "
+"fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, %S = "
+"másodperc, %q = keretszám, %v = eseményszám, / = almappa"
+
+#: templates/main.html:777
+msgid "Movie Passthrough"
+msgstr "Videóátmenet"
+
+#: templates/main.html:779
+msgid ""
+"Create movie files of the motion directly from the camera. This option "
+"should reduce CPU usage but does increase memory requirements. No image "
+"processing is performed so text overlays, privacy masks etc will not be on "
+"the resulting video."
+msgstr ""
+"Mozgáskor készítsen felvételeket  közvetlenül a kamera eszközről. Ez az "
+"opció csökkenti a CPU-használatot, de növeli a memóriaigényt. Nem történik "
+"képfeldolgozás, így szövegfeliratok, adatvédelmi maszkok stb. nem lesznek a "
+"kész videón."
+
+#: templates/main.html:782
+msgid "Movie Format"
+msgstr "Videoformátum"
+
+#: templates/main.html:825
+msgid ""
+"sets the movie file format; not all formats are guaranteed to work on all "
+"systems; if in doubt, test each format and select the one that works best "
+"with your video player"
+msgstr ""
+"beállítja a felvétel formátumát; nem garantált, hogy minden formátum "
+"bármelyik rendszeren működik; ha kétségei vannak, tesztelje külön az egyes "
+"formátumokat, és válassza ki azt, amelyik a legjobban működik a "
+"videólejátszójával"
+
+#: templates/main.html:828
+msgid "Movie Quality"
+msgstr "Videominőség"
+
+#: templates/main.html:830
+msgid ""
+"sets the MPEG video quality (higher values produce a better video quality "
+"but require more storage space)"
+msgstr ""
+"beállítja az MPEG videó minőségét (a magasabb értékek jobb videóminőséget "
+"eredményeznek, de több tárhelyet igényelnek)"
+
+#: templates/main.html:833
+msgid "Recording Mode"
+msgstr "Felvétel módja"
+
+#: templates/main.html:837
+msgid "Continuous Recording"
+msgstr "Folyamatos felvétel"
+
+#: templates/main.html:840
+msgid ""
+"sets the recording mode: Motion Triggered = a new movie created whenever "
+"motion is detected, Continuous Recording = one big movie file"
+msgstr ""
+"beállítja a rögzítési módot: Mozgásérzékelés = mozgás érzékelésekor új "
+"felvétel jön létre, Folyamatos felvétel = egy nagy videofájl"
+
+#: templates/main.html:843
+msgid "Maximum Movie Length"
+msgstr "Felvétel maximális hossza"
+
+#: templates/main.html:845
+msgid ""
+"sets the maximum length of movies, in seconds; if the motion event lasts "
+"longer, a new movie file is created; use 0 for unlimited length"
+msgstr ""
+"beállítja a felvételek maximális hosszát, másodpercben; ha a mozgási esemény "
+"tovább tart, új fájl jön létre; korlátlan hosszúsághoz használja a 0-t"
+
+#: templates/main.html:848
+msgid "Preserve Movies"
+msgstr "Felvételek megőrzése"
+
+#: templates/main.html:859
+msgid ""
+"movies older than the specified duration are automatically deleted to free "
+"up storage space"
+msgstr ""
+"a megadott időtartamnál régebbi fekvéteke automatikusan törlődnek a tárhely "
+"felszabadítása érdekében"
+
+#: templates/main.html:862
+msgid "Movies Lifetime"
+msgstr "Felvételek élettartama"
+
+#: templates/main.html:864
+msgid ""
+"sets the number of days after which the movies will be deleted automatically"
+msgstr ""
+"beállítja a napok számát, amely után a felvételek automatikusan törlődnek"
+
+#: templates/main.html:874
+msgid "enable this to use and configure the motion detection mechanism"
+msgstr ""
+"engedélyezze ezt a mozgásérzékelő mechanizmus használatához és "
+"konfigurálásához"
+
+#: templates/main.html:875
+msgid "Motion Detection"
+msgstr "Mozgásérzékelő"
+
+#: templates/main.html:880
+msgid "Frame Change Threshold"
+msgstr "Keretváltási küszöb"
+
+#: templates/main.html:882
+msgid ""
+"indicates the minimal percent of the image that must change between two "
+"successive frames in order for motion to be detected (smaller values give a "
+"more sensitive detection, but are prone to false positives)"
+msgstr ""
+"jelzi a kép minimális százalékát, amelynek változnia kell két egymást követő "
+"képkocka között ahhoz, hogy mozgást észleljen (a kisebb értékek érzékenyebb "
+"érzékelést adnak, de hajlamosak a hamis pozitív eredményekre)"
+
+#: templates/main.html:885
+msgid "Maximum Change Threshold"
+msgstr "Maximális váltási küszöb"
+
+#: templates/main.html:886
+msgid "pixels"
+msgstr "képpontok"
+
+#: templates/main.html:887
+msgid ""
+"sets the number of pixels changed between frames above which motion is no "
+"longer triggered (0 disables the limit)"
+msgstr ""
+"beállítja a képkockák között megváltozott képpontok számát, amely felett a "
+"mozgás már nem aktiválódik (0 letiltja a korlátőzást)"
+
+#: templates/main.html:890
+msgid "Auto Threshold Tuning"
+msgstr "Automatikus küszöb hangolás"
+
+#: templates/main.html:892
+msgid "enable this to automatically adjust the threshold"
+msgstr "Automatikus beállítás engedélyezése a küszöbre"
+
+#: templates/main.html:895
+msgid "Auto Noise Detection"
+msgstr "Automatikus zaj felismerés"
+
+#: templates/main.html:897
+msgid "enable this to automatically adjust the noise level"
+msgstr "engedélyezze ezt a zajszint automatikus beállításához"
+
+#: templates/main.html:900
+msgid "Noise Level"
+msgstr "Zajszint"
+
+#: templates/main.html:902
+msgid "manually sets the noise level to a fixed value"
+msgstr "manuálisan beállítja a zajszintet egy fix értékre"
+
+#: templates/main.html:905
+msgid "Light Switch Detection"
+msgstr "Villanykapcsoló észelése"
+
+#: templates/main.html:907
+msgid ""
+"sets the percentage of the image that needs to change so that the event is "
+"treated as a sudden light change instead of motion (0% disables the function)"
+msgstr ""
+"beállítja, hogy a kép hány százalékának kell módosulnia, hogy az eseményt "
+"mozgás helyett hirtelen fényváltozásként kezelje (0% letiltja a funkciót)"
+
+#: templates/main.html:910
+msgid "Despeckle Filter"
+msgstr "Folttalanító szűrő"
+
+#: templates/main.html:912
+msgid ""
+"enable this to apply a despeckle filter to frames before detecting motion"
+msgstr ""
+"Engedélyezze ezt, hogy a mozgás érzékelése előtt foltmentesítő szűrőt "
+"alkalmazzon a képkockákra"
+
+#: templates/main.html:918
+msgid "Motion Gap"
+msgstr "Mozgási rés"
+
+#: templates/main.html:920
+msgid ""
+"sets the number of seconds of silence (i.e. no motion) that mark the end of "
+"a motion event"
+msgstr ""
+"beállítja a csend (azaz nincs mozgás) másodpercek számát, amelyek egy "
+"mozgásesemény végét jelzik"
+
+#: templates/main.html:923
+msgid "Captured Before"
+msgstr "Előrögzítés"
+
+#: templates/main.html:925
+msgid ""
+"sets the number of frames to be captured (and included in the movie) before "
+"a motion event is detected"
+msgstr ""
+"beállítja a rögzítendő (és a felvételben szereplő) képkockák számát, mielőtt "
+"a rendszer mozgási eseményt észlel"
+
+#: templates/main.html:928
+msgid "Captured After"
+msgstr "Utánrögzítés"
+
+#: templates/main.html:930
+msgid ""
+"sets the number of frames to be captured (and included in the movie) after "
+"the end of a motion event"
+msgstr ""
+"beállítja a rögzítendő (és a felvételben szereplő) képkockák számát egy "
+"mozgásesemény után"
+
+#: templates/main.html:933
+msgid "Minimum Motion Frames"
+msgstr "Minimális képkocka mozgás"
+
+#: templates/main.html:935
+msgid ""
+"sets the minimum number of successive motion frames required to start a "
+"motion event"
+msgstr ""
+"beállítja a mozgásesemény elindításához szükséges egymást követő "
+"mozgáskockák minimális számát"
+
+#: templates/main.html:941
+msgid "Motion Detection Mask"
+msgstr "Mozgásérzékelő maszk"
+
+#: templates/main.html:943
+msgid "enables image masking for a more selective and precise motion detection"
+msgstr ""
+"lehetővé teszi a képmaszkolást a szelektívebb és precízebb mozgásérzékelés "
+"érdekében"
+
+#: templates/main.html:946
+msgid "Mask Type"
+msgstr "Maszk típusa"
+
+#: templates/main.html:949
+msgid "Smart"
+msgstr "Intelligens"
+
+#: templates/main.html:950
+msgid "Editable"
+msgstr "Szerkeszthető"
+
+#: templates/main.html:953
+msgid ""
+"the smart option automatically detects regions with regular motion and "
+"dynamically builds an internal mask, while the editable mask allows you to "
+"manually build it yourself"
+msgstr ""
+"az intelligens opció automatikusan felismeri a szabályos mozgású régiókat, "
+"és dinamikusan épít egy belső maszkot, míg a szerkeszthető maszk lehetővé "
+"teszi, hogy saját kezűleg készítse el azt"
+
+#: templates/main.html:956
+msgid "Smart Mask Sluggishness"
+msgstr "Intelligens maszk lomhasága"
+
+#: templates/main.html:958
+msgid ""
+"higher values result in a longer-lasting smart mask with a slower building "
+"process"
+msgstr ""
+"a magasabb értékek hosszabb élettartamú intelligens maszkot eredményeznek, "
+"lassabb építési folyamattal"
+
+#: templates/main.html:978
+msgid "Show Frame Changes"
+msgstr "Képkocka változások mutatása"
+
+#: templates/main.html:980
+msgid ""
+"if this is enabled, frame changes (number of pixels as well as the changed "
+"area) are shown on the video; temporarily enable this option to help adjust "
+"the motion detection parameters"
+msgstr ""
+"ha ez be van kapcsolva, a képkockaváltások (a pixelek száma és a "
+"megváltozott terület) megjelennek a videón; ideiglenesen engedélyezze ezt az "
+"opciót a mozgásérzékelési paraméterek beállításához"
+
+#: templates/main.html:983
+msgid "Create Debug Media Files"
+msgstr "Hibakereső médiafájlok készítése"
+
+#: templates/main.html:985
+msgid ""
+"when enabled, creates special movies and pictures that help debugging motion "
+"detection problems"
+msgstr ""
+"amikor engedélyezve van, speciális felvételeket és képeket hoz létre, "
+"amelyek segítenek a mozgásérzékelési problémák hibakeresésében"
+
+#: templates/main.html:994
+msgid "enable this if you want to be notified when motion is detected"
+msgstr "engedélyezze ezt, ha értesítést szeretne kapni, ha mozgást észlel"
+
+#: templates/main.html:995
+msgid "Motion Notifications"
+msgstr "Mozgás értesítések"
+
+#: templates/main.html:1000
+msgid "Send An Email"
+msgstr "E-mail küldése"
+
+#: templates/main.html:1002
+msgid ""
+"enable this if you want to receive an email whenever a motion event is "
+"detected"
+msgstr ""
+"engedélyezze ezt, ha e-mailt szeretne kapni, amikor a rendszer mozgási "
+"eseményt észlel"
+
+#: templates/main.html:1005
+msgid "Email Addresses"
+msgstr "E-mail címek"
+
+#: templates/main.html:1007
+msgid ""
+"email addresses (separated by comma) that are added here will receive "
+"notifications whenever a motion event is detected"
+msgstr ""
+"e-mail címek (vesszővel elválasztva), a hozzáadott címek értesítést kapnak, "
+"ha mozgási eseményt észlel"
+
+#: templates/main.html:1010
+msgid "SMTP Server"
+msgstr "SMTP-kiszolgáló"
+
+#: templates/main.html:1012
+msgid ""
+"enter the hostname or IP address of your SMTP server (for Gmail use smtp."
+"gmail.com)"
+msgstr ""
+"írja be az SMTP-szerver gazdagépnevét vagy IP-címét (a Gmailhez használja az "
+"smtp.gmail.com címet)"
+
+#: templates/main.html:1015
+msgid "SMTP Port"
+msgstr "SMTP port"
+
+#: templates/main.html:1017
+msgid ""
+"enter the port used by your SMTP server (usually 465 for non-TLS connections "
+"and 587 for TLS connections)"
+msgstr ""
+"adja meg az SMTP-szerver által használt portot (általában 465 nem TLS "
+"kapcsolatokhoz és 587 TLS kapcsolatokhoz)"
+
+#: templates/main.html:1020
+msgid "SMTP Account"
+msgstr "SMTP azonosító"
+
+#: templates/main.html:1022
+msgid "enter your SMTP account (normally your email address)"
+msgstr "adja meg SMTP-fiókját (általában az e-mail címét)"
+
+#: templates/main.html:1025
+msgid "SMTP Password"
+msgstr "SMTP jelszó"
+
+#: templates/main.html:1027
+msgid ""
+"enter your SMTP account password (for Gmail use your Google password or an "
+"app-specific generated password)"
+msgstr ""
+"írja be SMTP-fiókja jelszavát (Gmailhez használja a Google jelszavát vagy "
+"egy alkalmazásspecifikusan generált jelszót)"
+
+#: templates/main.html:1030
+msgid "From Address"
+msgstr "Feladó"
+
+#: templates/main.html:1032
+msgid ""
+"set a custom From address, if your SMTP service requires one (the first "
+"destination email address will be used if left blank)"
+msgstr ""
+"állítson be egyéni feladó címet, ha az SMTP szolgáltatás ezt igényli (ha "
+"üresen hagyja, az első cél e-mail cím kerül felhasználásra)"
+
+#: templates/main.html:1035
+msgid "Use TLS"
+msgstr "TLS használata"
+
+#: templates/main.html:1037
+msgid ""
+"enable this if your SMTP server requires TLS (Gmail needs this to be enabled)"
+msgstr ""
+"engedélyezze, ha az SMTP-szerver TLS-t igényel (a Gmailnek engedélyeznie "
+"kell)"
+
+#: templates/main.html:1040 templates/main.html:1068
+msgid "Attached Pictures Time Span"
+msgstr "Csatolt képek időtartama"
+
+#: templates/main.html:1042
+msgid ""
+"defines the picture search time interval to use when creating email "
+"attachments (higher values generate emails with more pictures at the cost of "
+"an increased notification delay); set to 0 to disable picture attachments; "
+"you must also enable Still Images for this to work"
+msgstr ""
+"meghatározza az e-mail mellékletek létrehozásakor használandó képkeresési "
+"időintervallumot (nagyobb értékek több képet tartalmazó e-maileket "
+"generálnak, megnövekedett értesítési késleltetés árán); állítsa 0-ra a "
+"képmellékletek letiltásához; Ehhez engedélyeznie kell az állóképeket is"
+
+#: templates/main.html:1046
+msgid "Test Email"
+msgstr "Teszt E-mail"
+
+#: templates/main.html:1047
+msgid ""
+"click this button to test email notifications after you have filled in the "
+"required details"
+msgstr ""
+"kattintson erre a gombra az e-mail értesítések teszteléséhez, miután "
+"kitöltötte a szükséges adatokat"
+
+#: templates/main.html:1053
+msgid "Send A Telegram Notification"
+msgstr "Egy Telegram üzenet küldése"
+
+#: templates/main.html:1055
+msgid ""
+"enable this if you want to receive a telegram message whenever a motion "
+"event is detected"
+msgstr ""
+"engedélyezze ezt, ha Telegram üzenetet szeretne kapni, amikor mozgási "
+"eseményt észlel"
+
+#: templates/main.html:1058
+msgid "HTTP API Token"
+msgstr "HTTP API Token"
+
+#: templates/main.html:1060
+msgid ""
+"When creating the telegram bot chat, you will receive an API token which you "
+"need to enter here. Click the API Info button below for a step-by-step guide "
+"on how to get your API Token. Also be sure to chat your newly created bot "
+"after your key is generated, to ensure you receive messages."
+msgstr ""
+"A Telegram bot chat létrehozásakor kap egy API tokent, amelyet itt kell "
+"megadnia. Kattintson az alábbi API-információ gombra az API-token "
+"beszerzésének lépésenkénti útmutatójához. Ügyeljen arra is, hogy a kulcs "
+"létrehozása után csevegjen az újonnan létrehozott robottal, hogy biztosan "
+"megkapja az üzeneteket."
+
+#: templates/main.html:1063
+msgid "Chat ID"
+msgstr "Csevegés ID"
+
+#: templates/main.html:1065
+msgid ""
+"Create a new chat to id_chatbot (@id_chatbot) and select start. The chatbot "
+"will return the number you need for this field."
+msgstr ""
+"Hozzon létre egy új csevegést az id_chatbot (@id_chatbot) számára, és "
+"válassza a Start lehetőséget. A chatbot visszaküldi a mezőhöz szükséges "
+"számot."
+
+#: templates/main.html:1070
+msgid ""
+"defines the picture search time interval to use when creating telegram photo "
+"attachments (higher values generate more pictures at the cost of an "
+"increased notification delay); set to 0 to disable picture attachments; you "
+"must also enable Still Images for this to work; you will want to play with "
+"this number until an image is sent. A good starting number is 30 if you set "
+"still images to one picture motion triggered. For standard motion triggered, "
+"set this much lower."
+msgstr ""
+"meghatározza a képkeresési időintervallumot a Telegram fényképmellékleteinek "
+"létrehozásakor (nagyobb értékek több képet generálnak, megnövekedett "
+"értesítési késleltetés árán); állítsa 0-ra a képmellékletek letiltásához; "
+"ehhez engedélyeznie kell az Állóképeket is; addig szeretne játszani ezzel a "
+"számmal, amíg el nem küld egy képet. Egy jó kezdő szám a 30, ha az "
+"állóképeket egy képmozgásra állítja be. Normál mozgás esetén állítsa ezt "
+"sokkal alacsonyabbra."
+
+#: templates/main.html:1073
+msgid "API Info"
+msgstr "API Infó"
+
+#: templates/main.html:1074
+msgid "Test"
+msgstr "Próba"
+
+#: templates/main.html:1082
+msgid ""
+"enable this if you want a URL to be requested whenever a motion event is "
+"detected"
+msgstr ""
+"engedélyezze ezt, ha azt szeretné, hogy a rendszer minden mozgásesemény "
+"észlelésekor URL-t kérjen"
+
+#: templates/main.html:1087
+#, python-format
+msgid ""
+"a single URL to be requested when motion is detected; the following special "
+"tokens are accepted: %Y = year, %m = month, %d = day, %H = hour, %M = "
+"minute, %S = second, %q = frame number, %v = event number"
+msgstr ""
+"egyetlen URL-t kell kérni, ha mozgást észlel; a következő speciális "
+"tokeneket fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M = perc, "
+"%S = másodperc, %q = keretszám, %v = eseményszám"
+
+#: templates/main.html:1107
+msgid ""
+"enable this if you want to execute a command whenever a motion event is "
+"detected"
+msgstr ""
+"engedélyezze ezt, ha parancsot szeretne végrehajtani, amikor mozgási "
+"eseményt észlel"
+
+#: templates/main.html:1112
+#, python-format
+msgid ""
+"a command to be executed when motion is detected; multiple commands can be "
+"separated by a semicolon; do not use semicolons inside commands; the "
+"following special tokens are accepted: %Y = year, %m = month, %d = day, %H = "
+"hour, %M = minute, %S = second, %q = frame number, %v = event number"
+msgstr ""
+"mozgás érzékelésekor végrehajtandó parancs; több parancs pontosvesszővel "
+"elválasztható; ne használjon pontosvesszőt a parancsokon belül; a következő "
+"speciális tokeneket fogadjuk el: %Y = év, %m = hónap, %d = nap, %H = óra, %M "
+"= perc, %S = másodperc, %q = keretszám, %v = eseményszám"
+
+#: templates/main.html:1118
+msgid "Run An End Command"
+msgstr "Egy befejező parancs futtatása"
+
+#: templates/main.html:1120
+msgid ""
+"enable this if you want to execute a command whenever a motion event ends"
+msgstr ""
+"engedélyezze ezt, ha parancsot szeretne végrehajtani, amikor egy "
+"mozgásesemény véget ér"
+
+#: templates/main.html:1125
+#, python-format
+msgid ""
+"a command to be executed when motion event ends; multiple commands can be "
+"separated by a semicolon; do not use semicolons inside commands; the "
+"following special tokens are accepted: %Y = year, %m = month, %d = date, %H "
+"= hour, %M = minute, %S = second, %q = frame number"
+msgstr ""
+"egy parancs, amelyet akkor kell végrehajtani, amikor a mozgásesemény véget "
+"ér; több parancs pontosvesszővel elválasztható; ne használjon pontosvesszőt "
+"a parancsokon belül; a következő speciális tokeneket fogadjuk el: %Y = év, "
+"%m = hónap, %d = dátum, %H = óra, %M = perc, %S = másodperc, %q = keretszám"
+
+#: templates/main.html:1135
+msgid ""
+"enable this if you want to define a weekly working schedule for motion "
+"detection"
+msgstr ""
+"engedélyezze ezt, ha heti munkarendet szeretne megadni a mozgásérzékeléshez"
+
+#: templates/main.html:1136
+msgid "Working Schedule"
+msgstr "Működés ütemezése"
+
+#: templates/main.html:1141
+msgid "Monday"
+msgstr "Hétfő"
+
+#: templates/main.html:1144 templates/main.html:1153 templates/main.html:1162
+#: templates/main.html:1171 templates/main.html:1180 templates/main.html:1189
+#: templates/main.html:1198
+msgid "from"
+msgstr "ettől"
+
+#: templates/main.html:1145 templates/main.html:1154 templates/main.html:1163
+#: templates/main.html:1172 templates/main.html:1181 templates/main.html:1190
+#: templates/main.html:1199
+msgid "to"
+msgstr "eddig:"
+
+#: templates/main.html:1147
+msgid "sets the working schedule time interval for Mondays"
+msgstr "beállítja a munkarend hétfői időintervallumát"
+
+#: templates/main.html:1150
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: templates/main.html:1156
+msgid "sets the working schedule time interval for Tuesdays"
+msgstr "beállítja a keddi munkarend időintervallumát"
+
+#: templates/main.html:1159
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: templates/main.html:1165
+msgid "sets the working schedule time interval for Wednesdays"
+msgstr "beállítja a szerdai munkarend időintervallumát"
+
+#: templates/main.html:1168
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: templates/main.html:1174
+msgid "sets the working schedule time interval for Thursdays"
+msgstr "beállítja a csütörtöki munkarend időintervallumát"
+
+#: templates/main.html:1177
+msgid "Friday"
+msgstr "Péntek"
+
+#: templates/main.html:1183
+msgid "sets the working schedule time interval for Friday"
+msgstr "beállítja a pénteki munkarend időintervallumát"
+
+#: templates/main.html:1186
+msgid "Saturday"
+msgstr "Szombat"
+
+#: templates/main.html:1192
+msgid "sets the working schedule time interval for Saturday"
+msgstr "beállítja a szombati munkarend időintervallumát"
+
+#: templates/main.html:1195
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: templates/main.html:1201
+msgid "sets the working schedule time interval for Sunday"
+msgstr "beállítja a vasárnapi munkarend időintervallumát"
+
+#: templates/main.html:1204
+msgid "Detect Motion"
+msgstr "Mozgásérzékelés"
+
+#: templates/main.html:1207
+msgid "During Working Schedule"
+msgstr "Munkaidő alatt"
+
+#: templates/main.html:1208
+msgid "Outside Working Schedule"
+msgstr "Munkaidőn kívül"
+
+#: templates/main.html:1211
+msgid ""
+"sets whether motion detection should be active during or outside the working "
+"schedule"
+msgstr ""
+"beállítja, hogy a mozgásérzékelés legyen-e aktív a munkarend alatt vagy azon "
+"kívül"

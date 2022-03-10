@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@ def _get_wifi_settings():
     
     except Exception as e:
         logging.error('could open wifi settings file %(path)s: %(msg)s' % {
-                'path': WPA_SUPPLICANT_CONF, 'msg': unicode(e)})
+                'path': WPA_SUPPLICANT_CONF, 'msg': str(e)})
         
         return {
             'wifiEnabled': False,
@@ -108,7 +108,7 @@ def _set_wifi_settings(s):
     
     except Exception as e:
         logging.error('could open wifi settings file %(path)s: %(msg)s' % {
-                'path': WPA_SUPPLICANT_CONF, 'msg': unicode(e)})
+                'path': WPA_SUPPLICANT_CONF, 'msg': str(e)})
 
         return
     
@@ -195,7 +195,7 @@ def _set_wifi_settings(s):
     
     except Exception as e:
         logging.error('could open wifi settings file %(path)s: %(msg)s' % {
-                'path': WPA_SUPPLICANT_CONF, 'msg': unicode(e)})
+                'path': WPA_SUPPLICANT_CONF, 'msg': str(e)})
 
         return
     
@@ -209,8 +209,7 @@ def _set_wifi_settings(s):
 def network():
     return {
         'label': 'Network',
-        'description': 'configure the network connection',
-        'advanced': True
+        'description': 'configure the network connection'
     }
 
 
@@ -224,7 +223,6 @@ def wifiEnabled():
         'description': 'enable this if you want to connect to a wireless network',
         'type': 'bool',
         'section': 'network',
-        'advanced': True,
         'reboot': True,
         'get': _get_wifi_settings,
         'set': _set_wifi_settings,
@@ -242,7 +240,6 @@ def wifiNetworkName():
         'description': 'the name (SSID) of your wireless network',
         'type': 'str',
         'section': 'network',
-        'advanced': True,
         'required': True,
         'reboot': True,
         'depends': ['wifiEnabled'],
@@ -262,7 +259,6 @@ def wifiNetworkKey():
         'description': 'the key (PSK) required to connect to your wireless network',
         'type': 'pwd',
         'section': 'network',
-        'advanced': True,
         'required': False,
         'reboot': True,
         'depends': ['wifiEnabled'],

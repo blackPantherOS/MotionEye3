@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,12 +22,13 @@ import subprocess
 
 from tornado import ioloop
 
-
 def get_os_version():
+    # relace old to better module and pretty name
     try:
-        import platformupdate
-        
-        return platformupdate.get_os_version()
+        import distro
+        distro_name = distro.os_release_attr('name')+" ("+ distro.os_release_attr('version')+")"
+
+        return distro_name
 
     except ImportError:
         return _get_os_version_lsb_release()
@@ -35,13 +36,17 @@ def get_os_version():
 
 def _get_os_version_lsb_release():
     try:
-        output = subprocess.check_output('lsb_release -sri', shell=True)
-        lines = output.strip().split()
-        name, version = lines
+        # vector fixme: output = subprocess.check_output('/usr/bin/lsb_release -si', shell=True).encode('utf-8')
+        # compatibility with : "blackPanther OS 22.1" format
+        name = subprocess.run(["/usr/bin/lsb_release", "-si"], capture_output=True)
+        name = name.stdout.decode('utf-8').strip()
+        vers = subprocess.run(["/usr/bin/lsb_release", "-sr"], capture_output=True)
+        version = vers.stdout.decode('utf-8').strip()
+
         if version.lower() == 'rolling':
             version = ''
-        
-        return name, version
+
+        return name+" ("+version+")"
 
     except:
         return _get_os_version_uname()
@@ -50,9 +55,10 @@ def _get_os_version_lsb_release():
 def _get_os_version_uname():
     try:
         output = subprocess.check_output('uname -rs', shell=True)
+        output = output.decode('utf-8')
         lines = output.strip().split()
         name, version = lines
-        
+
         return name, version
 
     except:
@@ -76,7 +82,7 @@ def compare_versions(version1, version2):
     len1 = len(version1)
     len2 = len(version2)
     length = min(len1, len2)
-    for i in xrange(length):
+    for i in range(length):
         p1 = version1[i]
         p2 = version2[i]
         

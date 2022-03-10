@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ class Daemon(object):
             if os.fork() > 0:  # parent
                 sys.exit(0)
 
-        except OSError, e: 
+        except OSError as e: 
             sys.stderr.write('fork() failed: %s\n' % e.strerror)
             sys.exit(-1)
 
@@ -61,7 +61,7 @@ class Daemon(object):
             if os.fork() > 0:  # parent
                 sys.exit(0) 
         
-        except OSError, e: 
+        except OSError as e: 
             sys.stderr.write('fork() failed: %s\n' % e.strerror)
             sys.exit(-1) 
 
@@ -123,7 +123,7 @@ class Daemon(object):
         except Exception as e:
             sys.stderr.write('failed to terminate server: %s\n' % e)
 
-        for i in xrange(50):  # @UnusedVariable
+        for i in range(50):  # @UnusedVariable
             try:
                 os.kill(pid, 0)
                 time.sleep(0.1)
@@ -169,14 +169,16 @@ handler_mapping = [
     (r'^/$', handlers.MainHandler),
     (r'^/manifest.json$', handlers.ManifestHandler),
     (r'^/config/main/(?P<op>set|get)/?$', handlers.ConfigHandler),
-    (r'^/config/(?P<camera_id>\d+)/(?P<op>get|set|rem|set_preview|test|authorize)/?$', handlers.ConfigHandler),
+    (r'^/config/(?P<camera_id>\d+)/(?P<op>get|set|rem|test|authorize)/?$', handlers.ConfigHandler),
     (r'^/config/(?P<op>add|list|backup|restore)/?$', handlers.ConfigHandler),
     (r'^/picture/(?P<camera_id>\d+)/(?P<op>current|list|frame)/?$', handlers.PictureHandler),
     (r'^/picture/(?P<camera_id>\d+)/(?P<op>download|preview|delete)/(?P<filename>.+?)/?$', handlers.PictureHandler),
     (r'^/picture/(?P<camera_id>\d+)/(?P<op>zipped|timelapse|delete_all)/(?P<group>.*?)/?$', handlers.PictureHandler),
     (r'^/movie/(?P<camera_id>\d+)/(?P<op>list)/?$', handlers.MovieHandler),
-    (r'^/movie/(?P<camera_id>\d+)/(?P<op>download|preview|delete)/(?P<filename>.+?)/?$', handlers.MovieHandler),
+    (r'^/movie/(?P<camera_id>\d+)/(?P<op>preview|delete)/(?P<filename>.+?)/?$', handlers.MovieHandler),
     (r'^/movie/(?P<camera_id>\d+)/(?P<op>delete_all)/(?P<group>.*?)/?$', handlers.MovieHandler),
+    (r'^/movie/(?P<camera_id>\d+)/playback/(?P<filename>.+?)/?$', handlers.MoviePlaybackHandler,{'path':r''}),
+    (r'^/movie/(?P<camera_id>\d+)/download/(?P<filename>.+?)/?$', handlers.MovieDownloadHandler,{'path':r''}),
     (r'^/action/(?P<camera_id>\d+)/(?P<action>\w+)/?$', handlers.ActionHandler),
     (r'^/prefs/(?P<key>\w+)?/?$', handlers.PrefsHandler),
     (r'^/_relay_event/?$', handlers.RelayEventHandler),
@@ -314,7 +316,10 @@ def start_motion():
     
     # add a motion running checker
     def checker():
-        if io_loop._stopped:
+        #vector fix me: print ("Type:",type(io_loop))
+        if not io_loop:
+        #if io_loop._stopped:
+            print ("Return...")
             return
             
         if not motionctl.running() and motionctl.started() and config.get_enabled_local_motion_cameras():
@@ -324,7 +329,7 @@ def start_motion():
             
             except Exception as e:
                 logging.error('failed to start motion: %(msg)s' % {
-                        'msg': unicode(e)}, exc_info=True)
+                        'msg': str(e)}, exc_info=True)
 
         io_loop.add_timeout(datetime.timedelta(seconds=settings.MOTION_CHECK_INTERVAL), checker)
     
@@ -394,6 +399,8 @@ def run():
     logging.info('server started')
     
     io_loop = IOLoop.instance()
+    # we need to reset the loop's PID to fix PID checks when running in daemon mode
+    io_loop._pid = os.getpid()
     io_loop.start()
 
     logging.info('server stopped')

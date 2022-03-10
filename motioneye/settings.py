@@ -1,7 +1,8 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 import logging
 import os.path
 import sys
+import socket
 
 import motioneye
 
@@ -15,6 +16,9 @@ TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 
 # the static files directory
 STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
+
+# translation files directory
+LOCALE_PATH = os.path.join(PROJECT_PATH, 'lang')
 
 # path to the configuration directory (must be writable by motionEye)
 CONF_PATH = [sys.prefix, ''][sys.prefix == '/usr'] + '/etc/motioneye'
@@ -113,6 +117,9 @@ LIST_MEDIA_TIMEOUT = 120
 # timeout in seconds to wait for media files list, when sending emails
 LIST_MEDIA_TIMEOUT_EMAIL = 10
 
+# timeout in seconds to wait for media files list, when sending telegrams
+LIST_MEDIA_TIMEOUT_TELEGRAM = 10
+
 # timeout in seconds to wait for zip file creation
 ZIP_TIMEOUT = 500
 
@@ -131,3 +138,6 @@ PASSWORD_HOOK = None
 
 # enables HTTP basic authentication scheme (in addition to, not instead of the signature mechanism)
 HTTP_BASIC_AUTH = False
+
+# provides the possibility to override the hostname
+SERVER_NAME = socket.gethostname()

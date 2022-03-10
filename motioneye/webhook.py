@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,8 +17,8 @@
 
 import json
 import logging
-import urllib2
-import urlparse
+import urllib.request, urllib.error, urllib.parse
+import urllib.parse
 
 import settings
 
@@ -44,7 +44,7 @@ def main(parser, args):
     logging.debug('url = %s' % options.url)
     
     headers = {}    
-    parts = urlparse.urlparse(options.url)
+    parts = urllib.parse.urlparse(options.url)
     url = options.url
     data = None
 
@@ -59,15 +59,15 @@ def main(parser, args):
 
     elif options.method == 'POSTj':  # json
         headers['Content-Type'] = 'application/json'
-        data = urlparse.parse_qs(parts.query)
-        data = {k: v[0] for (k, v) in data.iteritems()}
+        data = urllib.parse.parse_qs(parts.query)
+        data = {k: v[0] for (k, v) in data.items()}
         data = json.dumps(data)
         url = options.url.split('?')[0]
 
     else:  # GET
         pass
 
-    request = urllib2.Request(url, data, headers=headers)
+    request = urllib.request.Request(url, data, headers=headers)
     try:
         utils.urlopen(request, timeout=settings.REMOTE_REQUEST_TIMEOUT)
         logging.debug('webhook successfully called')

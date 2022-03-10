@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,7 +24,7 @@ import pipes
 import sys
 
 # make sure motioneye is on python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import settings
 
@@ -54,7 +55,7 @@ def load_settings():
     config_file = None
     debug = False
 
-    for i in xrange(1, len(sys.argv)):
+    for i in range(1, len(sys.argv)):
         arg = sys.argv[i]
         next_arg = i < len(sys.argv) - 1 and sys.argv[i + 1]
         if arg == '-c':
@@ -200,6 +201,7 @@ def make_arg_parser(command=None):
         description += '  startserver\n'
         description += '  stopserver\n'
         description += '  sendmail\n'
+        description += '  sendtelegram\n'
         description += '  webhook\n'
         description += '  shell\n\n'
 
@@ -257,6 +259,10 @@ def main():
     elif command == 'sendmail':
         import sendmail
         sendmail.main(arg_parser, sys.argv[2:])
+    
+    elif command == 'sendtelegram':
+        import sendtelegram
+        sendtelegram.main(arg_parser, sys.argv[2:])
     
     elif command == 'webhook':
         import webhook

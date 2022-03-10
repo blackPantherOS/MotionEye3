@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 import logging
 import subprocess
 import time
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 import config
 
@@ -41,7 +41,7 @@ def get_monitor_info(camera_id):
     interval = _interval_by_camera_id.get(camera_id, DEFAULT_INTERVAL)
     if monitor_info is None or now - last_call_time > interval:
         monitor_info, interval = _exec_monitor_command(command)
-        monitor_info = urllib.quote(monitor_info, safe='')
+        monitor_info = urllib.parse.quote(monitor_info, safe='')
         _interval_by_camera_id[camera_id] = interval
         _monitor_info_cache_by_camera_id[camera_id] = monitor_info
         _last_call_time_by_camera_id[camera_id] = now

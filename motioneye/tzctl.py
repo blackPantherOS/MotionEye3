@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@ def _get_time_zone_symlink():
     if not f:
         return None
     
-    for i in xrange(8):  # recursively follow the symlinks @UnusedVariable
+    for i in range(8):  # recursively follow the symlinks @UnusedVariable
         try:
             f = os.readlink(f)
 
@@ -132,7 +132,6 @@ def timeZone():
         'type': 'choices',
         'choices': [(t, t) for t in timezones],
         'section': 'general',
-        'advanced': True,
         'reboot': True,
         'get': get_time_zone,
         'set': _set_time_zone

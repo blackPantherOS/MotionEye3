@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -48,7 +48,7 @@ def _make_request(scheme, host, port, username, password, path, method='GET', da
     else:
         url += '?'
     
-    url += '&'.join([(n + '=' + v) for (n, v) in query.iteritems()])
+    url += '&'.join([(n + '=' + v) for (n, v) in query.items()])
     url += '&_signature=' + utils.compute_signature(method, url, data, password)
 
     if timeout is None:
@@ -155,9 +155,9 @@ def list(local_config, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config, camera=False),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
             
-            return callback(error=unicode(e))
+            return callback(error=str(e))
         
         cameras = response['cameras']
         
@@ -195,9 +195,9 @@ def get_config(local_config, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
             
-            return callback(error=unicode(e))
+            return callback(error=str(e))
         
         response['host'] = host
         response['port'] = port
@@ -236,34 +236,6 @@ def set_config(local_config, ui_config, callback):
             
             return callback(error=utils.pretty_http_error(response))
     
-        callback()
-
-    http_client = AsyncHTTPClient()
-    http_client.fetch(request, _callback_wrapper(on_response))
-
-
-def set_preview(local_config, controls, callback):
-    scheme, host, port, username, password, path, camera_id = _remote_params(local_config)
-    
-    logging.debug('setting preview for remote camera %(id)s on %(url)s' % {
-            'id': camera_id,
-            'url': pretty_camera_url(local_config)})
-    
-    data = json.dumps(controls)
-
-    p = path + '/config/%(id)s/set_preview/' % {'id': camera_id}
-    request = _make_request(scheme, host, port, username, password, p,
-                            method='POST', data=data, content_type='application/json')
-
-    def on_response(response):
-        if response.error:
-            logging.error('failed to set preview for remote camera %(id)s on %(url)s: %(msg)s' % {
-                    'id': camera_id,
-                    'url': pretty_camera_url(local_config),
-                    'msg': utils.pretty_http_error(response)})
-        
-            return callback(error=utils.pretty_http_error(response))
-        
         callback()
 
     http_client = AsyncHTTPClient()
@@ -370,9 +342,9 @@ def list_media(local_config, media_type, prefix, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
             
-            return callback(error=unicode(e))
+            return callback(error=str(e))
         
         return callback(response)
     
@@ -449,9 +421,9 @@ def make_zipped_content(local_config, media_type, group, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
 
-            return callback(error=unicode(e))
+            return callback(error=str(e))
 
         callback({'key': key})
 
@@ -537,9 +509,9 @@ def make_timelapse_movie(local_config, framerate, interval, group, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
 
-            return callback(error=unicode(e))
+            return callback(error=str(e))
         
         callback(response)
 
@@ -574,9 +546,9 @@ def check_timelapse_movie(local_config, group, callback):
         except Exception as e:
             logging.error('failed to decode json answer from %(url)s: %(msg)s' % {
                     'url': pretty_camera_url(local_config),
-                    'msg': unicode(e)})
+                    'msg': str(e)})
 
-            return callback(error=unicode(e))
+            return callback(error=str(e))
         
         callback(response)
 

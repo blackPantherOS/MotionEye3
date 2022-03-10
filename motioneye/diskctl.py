@@ -1,6 +1,6 @@
-
+# Copyright (c) 2022 blackPanther Europe (www.blackpanther.hu)
 # Copyright (c) 2013 Calin Crisan
-# This file is part of motionEye.
+# This file is part of motionEye3.
 #
 # motionEye is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -127,20 +127,20 @@ def _list_disks_dev_by_id():
             }
         
     # group partitions by disk
-    for dev, partition in partitions_by_dev.items():
-        for disk_dev, disk in disks_by_dev.items():
+    for dev, partition in list(partitions_by_dev.items()):
+        for disk_dev, disk in list(disks_by_dev.items()):
             if dev.startswith(disk_dev):
                 disk['partitions'].append(partition)
-                partition.pop('unmatched')
+                partition.pop('unmatched', None)
             
     # add separate partitions that did not match any disk
-    for partition in partitions_by_dev.values():
+    for partition in list(partitions_by_dev.values()):
         if partition.pop('unmatched', False):
             disks_by_dev[partition['target']] = partition
             partition['partitions'] = [dict(partition)]
 
     # prepare flat list of disks
-    disks = disks_by_dev.values()
+    disks = list(disks_by_dev.values())
     disks.sort(key=lambda d: d['vendor'])
     
     for disk in disks:
