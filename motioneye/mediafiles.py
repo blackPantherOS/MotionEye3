@@ -742,8 +742,9 @@ def make_timelapse_movie(camera_config, framerate, interval, group):
                 else:
                     raise
 
-            # vector fix me: frame_index = re.findall('frame=\s*(\d+)', output)
-            frame_index = re.findall('frame=\s*(\d+)'.encode('utf-8'), output)
+            # vector fix me: 
+            #frame_index = re.findall('frame=\s*(\d+)', output)
+            frame_index = re.findall('frame=\s*(\d+)'.encode('utf-8'), str(output).encode('utf-8'))
             try:
                 frame_index = int(frame_index[-1])
 
@@ -988,7 +989,8 @@ def get_prepared_cache(key):
 
 
 def set_prepared_cache(data):
-    key = hashlib.sha1(str(time.time())).hexdigest()
+
+    key = hashlib.sha1(str(time.time()).encode('utf-8')).hexdigest()
 
     if key in _prepared_files:
         logging.warn('key "%s" already present in prepared cache' % key)
