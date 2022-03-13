@@ -22,6 +22,30 @@ import logging
 import os.path
 import pipes
 import sys
+import locale
+import gettext
+
+locale.setlocale(locale.LC_ALL, '')
+language = 'en'
+traduction = None
+pathname=os.path.dirname(__file__)
+
+try:
+  gettext.find('messages',pathname+'/lang')
+  traduction = gettext.translation('messages',pathname+'/lang')
+  traduction.install();
+except:
+  traduction = gettext
+  gettext.install('motioneye')
+
+file = gettext.find('messages', pathname+'/lang')
+if file:
+  language = locale.getlocale()[0].split('_')[0]
+else:
+  language = 'en'
+
+
+logging.info(_('language : ') + language)
 
 # make sure motioneye is on python path
 sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

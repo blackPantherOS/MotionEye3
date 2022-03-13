@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-13 15:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: static/js/main.js:3524
+msgid "Username"
+msgstr ""
+
+#: static/js/main.js:3529
+msgid "Password"
+msgstr ""
+
+#: static/js/main.js:3535
+msgid "Remember Me"
+msgstr ""
+
+#: static/js/main.js:3549
+msgid "Invalid credentials."
+msgstr ""
+
+#: static/js/main.js:3553 static/js/main.js:3559
+msgid "Login"
+msgstr ""
+
+#: static/js/main.js:3556
+msgid "Cancel"
+msgstr ""
+
+#: static/js/ui.js:16
+msgid "ON"
+msgstr ""
+
+#: static/js/ui.js:21
+msgid "OFF"
+msgstr ""

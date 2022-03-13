@@ -53,6 +53,21 @@
 
 {% block style %}
     {{super()}}
+    <script type="text/javascript" src="{{static_path}}js/gettext.min.js"></script>
+    <script type="text/javascript">
+      function Get(yourUrl){
+          var Httpreq = new XMLHttpRequest(); // a new request
+          Httpreq.open("GET",yourUrl,false);
+          Httpreq.send(null);
+          return Httpreq.responseText;
+      }
+      var i18n = window.i18n();
+      var i18njson=Get("{{static_path}}js/motioneye.{{language}}.json");
+      i18n.loadJSON(i18njson, 'messages');
+      i18n.setLocale('{{language}}');
+
+    </script>
+
     <link rel="stylesheet" type="text/css" href="{{static_path}}css/ui.css?v={{version}}" />
     <link rel="stylesheet" type="text/css" href="{{static_path}}css/main.css?v={{version}}" />
     {% if frame %}

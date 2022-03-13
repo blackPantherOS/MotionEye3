@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-10 02:24+0100\n"
+"POT-Creation-Date: 2022-03-13 15:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: template.py:51
+#: meyectl.py:48
+msgid "language : "
+msgstr ""
+
+#: server.py:364
+#, python-format
+msgid "hello! this is motionEye3 server %s"
+msgstr ""
+
+#: server.py:379
+msgid "cleanup started"
+msgstr ""
+
+#: server.py:382
+msgid "wsswitch started"
+msgstr ""
+
+#: server.py:385
+msgid "tasks started"
+msgstr ""
+
+#: server.py:389
+msgid "mjpg client garbage collector started"
+msgstr ""
+
+#: server.py:393
+msgid "smb mounts started"
+msgstr ""
+
+#: server.py:396
+#, python-format
+msgid "server language: %s"
+msgstr ""
+
+#: server.py:403
+msgid "server started"
+msgstr ""
+
+#: template.py:52
 #, python-format
 msgid "load : %s langs: %s"
 msgstr ""
@@ -42,7 +80,7 @@ msgstr ""
 msgid "year"
 msgstr ""
 
-#: templates/main.html:750 templates/main.html:863 utils.py:180
+#: templates/main.html:768 templates/main.html:881 utils.py:180
 msgid "days"
 msgstr ""
 
@@ -66,8 +104,8 @@ msgstr ""
 msgid "second"
 msgstr ""
 
-#: templates/main.html:731 templates/main.html:844 templates/main.html:919
-#: templates/main.html:1041 templates/main.html:1069 utils.py:201 utils.py:204
+#: templates/main.html:749 templates/main.html:862 templates/main.html:937
+#: templates/main.html:1059 templates/main.html:1087 utils.py:201 utils.py:204
 msgid "seconds"
 msgstr ""
 
@@ -75,561 +113,581 @@ msgstr ""
 msgid "minus"
 msgstr ""
 
-#: static/js/main.js:3525 templates/main.html:487
+#: static/js/main.js:3524 templates/main.html:505
 msgid "Username"
 msgstr ""
 
-#: static/js/main.js:3529 templates/main.html:492
+#: static/js/main.js:3529 templates/main.html:510
 msgid "Password"
 msgstr ""
 
-#: static/js/main.js:3534
+#: static/js/main.js:3535
 msgid "Remember Me"
 msgstr ""
 
-#: templates/main.html:109
+#: static/js/main.js:3549
+msgid "Invalid credentials."
+msgstr ""
+
+#: static/js/main.js:3553 static/js/main.js:3559
+msgid "Login"
+msgstr ""
+
+#: static/js/main.js:3556
+msgid "Cancel"
+msgstr ""
+
+#: static/js/ui.js:16
+msgid "ON"
+msgstr ""
+
+#: static/js/ui.js:21
+msgid "OFF"
+msgstr ""
+
+#: templates/main.html:127
 msgid "user preferences"
 msgstr ""
 
-#: templates/main.html:110
+#: templates/main.html:128
 msgid "Preferences"
 msgstr ""
 
-#: templates/main.html:115
+#: templates/main.html:133
 msgid "Layout Columns"
 msgstr ""
 
-#: templates/main.html:117
+#: templates/main.html:135
 msgid "configures the number of columns used to lay out the camera frames"
 msgstr ""
 
-#: templates/main.html:120
+#: templates/main.html:138
 msgid "Fit Frames Vertically"
 msgstr ""
 
-#: templates/main.html:122
+#: templates/main.html:140
 msgid ""
 "controls whether frame sizes can be reduced to vertically fit the window "
 "or not"
 msgstr ""
 
-#: templates/main.html:125
+#: templates/main.html:143
 msgid "Layout Rows"
 msgstr ""
 
-#: templates/main.html:127
+#: templates/main.html:145
 msgid "configures the number of rows used to lay out the camera frames"
 msgstr ""
 
-#: templates/main.html:130
+#: templates/main.html:148
 msgid "Frame Rate Dimmer"
 msgstr ""
 
-#: templates/main.html:132
+#: templates/main.html:150
 msgid ""
 "dims the global frame rate to save network bandwidth and traffic (does "
 "notwork on simple MJPEG cameras)"
 msgstr ""
 
-#: templates/main.html:135
+#: templates/main.html:153
 msgid "Resolution Dimmer"
 msgstr ""
 
-#: templates/main.html:137
+#: templates/main.html:155
 msgid ""
 "dims the actual resolution of all cameras to save network bandwidth and "
 "traffic (does notwork on simple MJPEG cameras)"
 msgstr ""
 
-#: templates/main.html:147
+#: templates/main.html:165
 msgid "general settings, not related to any camera"
 msgstr ""
 
-#: templates/main.html:148
+#: templates/main.html:166
 msgid "General Settings"
 msgstr ""
 
-#: templates/main.html:153
+#: templates/main.html:171
 msgid "Admin Username"
 msgstr ""
 
-#: templates/main.html:155
+#: templates/main.html:173
 msgid "the username to be used for configuring the system"
 msgstr ""
 
-#: templates/main.html:158
+#: templates/main.html:176
 msgid "Admin Password"
 msgstr ""
 
-#: templates/main.html:160
+#: templates/main.html:178
 msgid "administrator password"
 msgstr ""
 
-#: templates/main.html:163
+#: templates/main.html:181
 msgid "Viewer Username"
 msgstr ""
 
-#: templates/main.html:165
+#: templates/main.html:183
 msgid "the username to be used for video surveillance"
 msgstr ""
 
-#: templates/main.html:168
+#: templates/main.html:186
 msgid "Viewer Password"
 msgstr ""
 
-#: templates/main.html:170
+#: templates/main.html:188
 msgid ""
 "the password for the surveillance user (leave empty for passwordless "
 "surveillance)"
 msgstr ""
 
-#: templates/main.html:179
+#: templates/main.html:197
 msgid "motionEye Version"
 msgstr ""
 
-#: templates/main.html:183
+#: templates/main.html:201
 msgid "Motion Version"
 msgstr ""
 
-#: templates/main.html:187
+#: templates/main.html:205
 msgid "OS Version"
 msgstr ""
 
-#: templates/main.html:192
+#: templates/main.html:210
 msgid "Software Update"
 msgstr ""
 
-#: templates/main.html:193
+#: templates/main.html:211
 msgid "Check"
 msgstr ""
 
-#: templates/main.html:194
+#: templates/main.html:212
 msgid "checks for new versions and performs updates"
 msgstr ""
 
-#: templates/main.html:198
+#: templates/main.html:216
 msgid "Power"
 msgstr ""
 
-#: templates/main.html:199
+#: templates/main.html:217
 msgid "Shut Down"
 msgstr ""
 
-#: templates/main.html:200
+#: templates/main.html:218
 msgid "shuts down the system"
 msgstr ""
 
-#: templates/main.html:204
+#: templates/main.html:222
 msgid "Reboot"
 msgstr ""
 
-#: templates/main.html:205
+#: templates/main.html:223
 msgid "reboots the system"
 msgstr ""
 
-#: templates/main.html:211
+#: templates/main.html:229
 msgid "Configuration"
 msgstr ""
 
-#: templates/main.html:212
+#: templates/main.html:230
 msgid "Backup"
 msgstr ""
 
-#: templates/main.html:213
+#: templates/main.html:231
 msgid "creates a file with the current configuration for you to save it locally"
 msgstr ""
 
-#: templates/main.html:217
+#: templates/main.html:235
 msgid "Restore"
 msgstr ""
 
-#: templates/main.html:218
+#: templates/main.html:236
 msgid "restores the configuration from a previously saved backup file"
 msgstr ""
 
-#: templates/main.html:246
+#: templates/main.html:264
 msgid "enable this if you want to use this camera device"
 msgstr ""
 
-#: templates/main.html:247
+#: templates/main.html:265
 msgid "Video Device"
 msgstr ""
 
-#: templates/main.html:252 templates/main.html:570 templates/main.html:587
+#: templates/main.html:270 templates/main.html:588 templates/main.html:605
 msgid "Camera Name"
 msgstr ""
 
-#: templates/main.html:254
+#: templates/main.html:272
 msgid "an alias for this camera device"
 msgstr ""
 
-#: templates/main.html:257
+#: templates/main.html:275
 msgid "Camera ID"
 msgstr ""
 
-#: templates/main.html:259
+#: templates/main.html:277
 msgid "the camera identifier number"
 msgstr ""
 
-#: templates/main.html:262
+#: templates/main.html:280
 msgid "Camera Device"
 msgstr ""
 
-#: templates/main.html:266
+#: templates/main.html:284
 msgid "Camera Type"
 msgstr ""
 
-#: templates/main.html:273
+#: templates/main.html:291
 msgid "Automatic Brightness"
 msgstr ""
 
-#: templates/main.html:275
+#: templates/main.html:293
 msgid ""
 "enables software automatic brightness (only recommended for cameras "
 "without autobrightness)"
 msgstr ""
 
-#: templates/main.html:281
+#: templates/main.html:299
 msgid "Video Resolution"
 msgstr ""
 
-#: templates/main.html:286
+#: templates/main.html:304
 msgid ""
 "the video resolution (larger values produce better quality but require "
 "more CPU power, larger storage space and bandwidth)"
 msgstr ""
 
-#: templates/main.html:289
+#: templates/main.html:307
 msgid "Width"
 msgstr ""
 
-#: templates/main.html:291
+#: templates/main.html:309
 msgid "enter a custom resolution width"
 msgstr ""
 
-#: templates/main.html:294
+#: templates/main.html:312
 msgid "Height"
 msgstr ""
 
-#: templates/main.html:296
+#: templates/main.html:314
 msgid "enter a custom resolution height"
 msgstr ""
 
-#: templates/main.html:299
+#: templates/main.html:317
 msgid "Video Rotation"
 msgstr ""
 
-#: templates/main.html:308
+#: templates/main.html:326
 msgid ""
 "use this to rotate the captured image, if your camera is not positioned "
 "correctly"
 msgstr ""
 
-#: templates/main.html:311
+#: templates/main.html:329
 msgid "Frame Rate"
 msgstr ""
 
-#: templates/main.html:313
+#: templates/main.html:331
 msgid ""
 "sets the number of frames captured by the camera every second (higher "
 "values produce smoother videos but require more CPU power, larger storage"
 " space and bandwidth)"
 msgstr ""
 
-#: templates/main.html:319
+#: templates/main.html:337
 msgid "Privacy Mask"
 msgstr ""
 
-#: templates/main.html:321
+#: templates/main.html:339
 msgid ""
 "enables image masking to prevent some image areas from being recorded to "
 "protect privacy"
 msgstr ""
 
-#: templates/main.html:326 templates/main.html:963
+#: templates/main.html:344 templates/main.html:981
 msgid "Edit Mask"
 msgstr ""
 
-#: templates/main.html:327 templates/main.html:964
+#: templates/main.html:345 templates/main.html:982
 msgid "Save Mask"
 msgstr ""
 
-#: templates/main.html:330 templates/main.html:967
+#: templates/main.html:348 templates/main.html:985
 msgid "click this button to enable/disable the mask editor"
 msgstr ""
 
-#: templates/main.html:334 templates/main.html:971
+#: templates/main.html:352 templates/main.html:989
 msgid "Clear Mask"
 msgstr ""
 
-#: templates/main.html:335 templates/main.html:972
+#: templates/main.html:353 templates/main.html:990
 msgid "click this button to clear the current mask"
 msgstr ""
 
-#: templates/main.html:341
+#: templates/main.html:359
 msgid "Extra Motion Options"
 msgstr ""
 
-#: templates/main.html:343
+#: templates/main.html:361
 msgid ""
 "you can add here any extra options for the motion daemon (use the "
 "&quot;name value&quot; format, one option per line)"
 msgstr ""
 
-#: templates/main.html:352
+#: templates/main.html:370
 msgid "choose where and how your media files are saved"
 msgstr ""
 
-#: templates/main.html:353
+#: templates/main.html:371
 msgid "File Storage"
 msgstr ""
 
-#: templates/main.html:358
+#: templates/main.html:376
 msgid "Storage Device"
 msgstr ""
 
-#: templates/main.html:363
+#: templates/main.html:381
 msgid "indicates the storage device where the image and video files will be saved"
 msgstr ""
 
-#: templates/main.html:366
+#: templates/main.html:384
 msgid "Network Server"
 msgstr ""
 
-#: templates/main.html:368
+#: templates/main.html:386
 msgid "the address of the network server (IP address or hostname)"
 msgstr ""
 
-#: templates/main.html:371
+#: templates/main.html:389
 msgid "SMB Protocol Version"
 msgstr ""
 
-#: templates/main.html:381
+#: templates/main.html:399
 msgid ""
 "selects the SMB version to be used (test the various options and see "
 "which one works best with your NAS)"
 msgstr ""
 
-#: templates/main.html:384
+#: templates/main.html:402
 msgid "Share Name"
 msgstr ""
 
-#: templates/main.html:386
+#: templates/main.html:404
 msgid "the name of the network share"
 msgstr ""
 
-#: templates/main.html:389
+#: templates/main.html:407
 msgid "Share Username"
 msgstr ""
 
-#: templates/main.html:391
+#: templates/main.html:409
 msgid ""
 "the username to be supplied when accessing the network share (leave empty"
 " if no username is required)"
 msgstr ""
 
-#: templates/main.html:394
+#: templates/main.html:412
 msgid "Share Password"
 msgstr ""
 
-#: templates/main.html:396
+#: templates/main.html:414
 msgid ""
 "the password required by the network share (leave empty if no password is"
 " required)"
 msgstr ""
 
-#: templates/main.html:399
+#: templates/main.html:417
 msgid "Root Directory"
 msgstr ""
 
-#: templates/main.html:401
+#: templates/main.html:419
 msgid ""
 "the root path (on the selected storage device) where the files will be "
 "saved"
 msgstr ""
 
-#: templates/main.html:405
+#: templates/main.html:423
 msgid "Test Share"
 msgstr ""
 
-#: templates/main.html:406
+#: templates/main.html:424
 msgid ""
 "click this button to test the network share connectivity after you have "
 "filled in the required details"
 msgstr ""
 
-#: templates/main.html:412
+#: templates/main.html:430
 msgid "Disk Usage"
 msgstr ""
 
-#: templates/main.html:416
+#: templates/main.html:434
 msgid "the used/total size of the disk where the root directory resides"
 msgstr ""
 
-#: templates/main.html:422
+#: templates/main.html:440
 msgid "Upload Media Files"
 msgstr ""
 
-#: templates/main.html:424
+#: templates/main.html:442
 msgid ""
 "enable this if you want your media files to be uploaded to an external "
 "service"
 msgstr ""
 
-#: templates/main.html:427
+#: templates/main.html:445
 msgid "Upload Pictures"
 msgstr ""
 
-#: templates/main.html:429
+#: templates/main.html:447
 msgid "enable this if you want pictures to be uploaded to an external service"
 msgstr ""
 
-#: templates/main.html:432
+#: templates/main.html:450
 msgid "Upload Movies"
 msgstr ""
 
-#: templates/main.html:434
+#: templates/main.html:452
 msgid "enable this if you want videos to be uploaded to an external service"
 msgstr ""
 
-#: templates/main.html:437
+#: templates/main.html:455
 msgid "Upload Service"
 msgstr ""
 
-#: templates/main.html:440
+#: templates/main.html:458
 msgid "FTP Server"
 msgstr ""
 
-#: templates/main.html:441
+#: templates/main.html:459
 msgid "SFTP Server"
 msgstr ""
 
-#: templates/main.html:444
+#: templates/main.html:462
 msgid "Google Drive"
 msgstr ""
 
-#: templates/main.html:445
+#: templates/main.html:463
 msgid "Google Photo"
 msgstr ""
 
-#: templates/main.html:446
+#: templates/main.html:464
 msgid "Dropbox"
 msgstr ""
 
-#: templates/main.html:449
+#: templates/main.html:467
 msgid "choose a service to which the media files should be uploaded"
 msgstr ""
 
-#: templates/main.html:452
+#: templates/main.html:470
 msgid "Server Address"
 msgstr ""
 
-#: templates/main.html:454
+#: templates/main.html:472
 msgid ""
 "the domain name or IP address of the server (e.g. ftp.example.com or "
 "192.168.1.3)"
 msgstr ""
 
-#: templates/main.html:457
+#: templates/main.html:475
 msgid "Server Port"
 msgstr ""
 
-#: templates/main.html:459
+#: templates/main.html:477
 msgid ""
 "the port to use when connecting to the service (leave it empty to use the"
 " default value)"
 msgstr ""
 
-#: templates/main.html:462
+#: templates/main.html:480
 msgid "Method"
 msgstr ""
 
-#: templates/main.html:469
+#: templates/main.html:487
 msgid "the HTTP method to use when uploading files"
 msgstr ""
 
-#: templates/main.html:472
+#: templates/main.html:490
 msgid "Location"
 msgstr ""
 
-#: templates/main.html:474
+#: templates/main.html:492
 msgid ""
 "the location (root path) where media files should be uploaded (e.g. "
 "/files/cam1/)"
 msgstr ""
 
-#: templates/main.html:477
+#: templates/main.html:495
 msgid "Include Subfolders"
 msgstr ""
 
-#: templates/main.html:479
+#: templates/main.html:497
 msgid ""
 "enable this to upload the media files together with their subfolders, "
 "instead of placing them directly into the root location"
 msgstr ""
 
-#: templates/main.html:482
+#: templates/main.html:500
 msgid "Clean Cloud"
 msgstr ""
 
-#: templates/main.html:484
+#: templates/main.html:502
 msgid ""
 "enable this to delete the uploaded media files on cloud as well when the "
 "local media files get deleted according to file persistence setting, "
 "currently this option is available only for gdrive"
 msgstr ""
 
-#: templates/main.html:489
+#: templates/main.html:507
 msgid "the username for the upload service account"
 msgstr ""
 
-#: templates/main.html:494
+#: templates/main.html:512
 msgid "the password for the upload service account"
 msgstr ""
 
-#: templates/main.html:497
+#: templates/main.html:515
 msgid "Authorization Key"
 msgstr ""
 
-#: templates/main.html:499
+#: templates/main.html:517
 msgid ""
 "the key used to authenticate with the upload service (normally required "
 "only during setup)"
 msgstr ""
 
-#: templates/main.html:505
+#: templates/main.html:523
 msgid "Obtain Key"
 msgstr ""
 
-#: templates/main.html:508
+#: templates/main.html:526
 msgid "click here to obtain the service authorization key"
 msgstr ""
 
-#: templates/main.html:512
+#: templates/main.html:530
 msgid "Test Service"
 msgstr ""
 
-#: templates/main.html:513
+#: templates/main.html:531
 msgid ""
 "click this button to test the upload service after you have filled in the"
 " required details"
 msgstr ""
 
-#: templates/main.html:519 templates/main.html:1080
+#: templates/main.html:537 templates/main.html:1098
 msgid "Call A Web Hook"
 msgstr ""
 
-#: templates/main.html:521
+#: templates/main.html:539
 msgid ""
 "enable this if you want a URL to be requested after a media file is "
 "created"
 msgstr ""
 
-#: templates/main.html:524 templates/main.html:1085
+#: templates/main.html:542 templates/main.html:1103
 msgid "Web Hook URL"
 msgstr ""
 
-#: templates/main.html:526
+#: templates/main.html:544
 #, python-format
 msgid ""
 "a URL to be requested when motion is detected; the following special "
@@ -637,29 +695,29 @@ msgid ""
 "minute, %S = second, %q = frame number, %v = event number, %f = file path"
 msgstr ""
 
-#: templates/main.html:529 templates/main.html:1090
+#: templates/main.html:547 templates/main.html:1108
 msgid "HTTP Method"
 msgstr ""
 
-#: templates/main.html:538 templates/main.html:1099
+#: templates/main.html:556 templates/main.html:1117
 msgid ""
 "the HTTP method to use when requesting the web hook URL (the given URL-"
 "encoded parameters will in fact be transmitted as indicated here)"
 msgstr ""
 
-#: templates/main.html:544 templates/main.html:1105
+#: templates/main.html:562 templates/main.html:1123
 msgid "Run A Command"
 msgstr ""
 
-#: templates/main.html:546
+#: templates/main.html:564
 msgid "enable this if you want to execute a command after a media file is created"
 msgstr ""
 
-#: templates/main.html:549 templates/main.html:1110 templates/main.html:1123
+#: templates/main.html:567 templates/main.html:1128 templates/main.html:1141
 msgid "Command"
 msgstr ""
 
-#: templates/main.html:551
+#: templates/main.html:569
 #, python-format
 msgid ""
 "a command to be executed after a media file is created; multiple commands"
@@ -669,35 +727,35 @@ msgid ""
 "number, %f = file path"
 msgstr ""
 
-#: templates/main.html:561
+#: templates/main.html:579
 msgid "choose what information is displayed on the captured frames"
 msgstr ""
 
-#: templates/main.html:562
+#: templates/main.html:580
 msgid "Text Overlay"
 msgstr ""
 
-#: templates/main.html:567
+#: templates/main.html:585
 msgid "Left Text"
 msgstr ""
 
-#: templates/main.html:571 templates/main.html:588
+#: templates/main.html:589 templates/main.html:606
 msgid "Timestamp"
 msgstr ""
 
-#: templates/main.html:572 templates/main.html:589
+#: templates/main.html:590 templates/main.html:607
 msgid "Custom Text"
 msgstr ""
 
-#: templates/main.html:573 templates/main.html:590 templates/main.html:647
+#: templates/main.html:591 templates/main.html:608 templates/main.html:665
 msgid "Disabled"
 msgstr ""
 
-#: templates/main.html:576
+#: templates/main.html:594
 msgid "sets the text displayed on the movies and images, on the lower left corner"
 msgstr ""
 
-#: templates/main.html:581
+#: templates/main.html:599
 #, python-format
 msgid ""
 "sets a custom left text; the following special tokens are accepted: %Y = "
@@ -706,17 +764,17 @@ msgid ""
 " = new line"
 msgstr ""
 
-#: templates/main.html:584
+#: templates/main.html:602
 msgid "Right Text"
 msgstr ""
 
-#: templates/main.html:593
+#: templates/main.html:611
 msgid ""
 "sets the text displayed on the movies and images, on the lower right "
 "corner"
 msgstr ""
 
-#: templates/main.html:598
+#: templates/main.html:616
 #, python-format
 msgid ""
 "sets a custom right text; the following special tokens are accepted: %Y ="
@@ -725,142 +783,142 @@ msgid ""
 " = new line"
 msgstr ""
 
-#: templates/main.html:601
+#: templates/main.html:619
 msgid "Text Scale"
 msgstr ""
 
-#: templates/main.html:603
+#: templates/main.html:621
 msgid "sets the size of the overlay text"
 msgstr ""
 
-#: templates/main.html:613
+#: templates/main.html:631
 msgid "enable this if you want video streaming for this camera"
 msgstr ""
 
-#: templates/main.html:614
+#: templates/main.html:632
 msgid "Video Streaming"
 msgstr ""
 
-#: templates/main.html:619
+#: templates/main.html:637
 msgid "Streaming Frame Rate"
 msgstr ""
 
-#: templates/main.html:621
+#: templates/main.html:639
 msgid "sets the number of frames transmitted every second on the live streaming"
 msgstr ""
 
-#: templates/main.html:624
+#: templates/main.html:642
 msgid "Streaming Quality"
 msgstr ""
 
-#: templates/main.html:626
+#: templates/main.html:644
 msgid ""
 "sets the live streaming quality (higher values produce a better video "
 "quality but require more bandwidth)"
 msgstr ""
 
-#: templates/main.html:629
+#: templates/main.html:647
 msgid "Streaming Image Resizing"
 msgstr ""
 
-#: templates/main.html:631
+#: templates/main.html:649
 msgid ""
 "when this is enabled, the images are resized before they are sent to the "
 "browser (disable when running on a slow CPU)"
 msgstr ""
 
-#: templates/main.html:634
+#: templates/main.html:652
 msgid "Streaming Resolution"
 msgstr ""
 
-#: templates/main.html:636
+#: templates/main.html:654
 msgid ""
 "the streaming resolution given as percent of the video device resolution "
 "(higher values produce better video quality but require more bandwidth)"
 msgstr ""
 
-#: templates/main.html:639
+#: templates/main.html:657
 msgid "Streaming Port"
 msgstr ""
 
-#: templates/main.html:641
+#: templates/main.html:659
 msgid "sets the TCP port on which the webcam streaming server listens"
 msgstr ""
 
-#: templates/main.html:644
+#: templates/main.html:662
 msgid "Authentication Mode"
 msgstr ""
 
-#: templates/main.html:648
+#: templates/main.html:666
 msgid "Basic"
 msgstr ""
 
-#: templates/main.html:649
+#: templates/main.html:667
 msgid "Digest"
 msgstr ""
 
-#: templates/main.html:652
+#: templates/main.html:670
 msgid ""
 "the authentication method used by the stream (choose Basic instead of "
 "Digest if you encounter issues with third party apps); surveillance "
 "credentials will be used"
 msgstr ""
 
-#: templates/main.html:655
+#: templates/main.html:673
 msgid "Motion Optimization"
 msgstr ""
 
-#: templates/main.html:657
+#: templates/main.html:675
 msgid ""
 "enable this if you want a lower frame rate for the live streaming when no"
 " motion is detected"
 msgstr ""
 
-#: templates/main.html:663
+#: templates/main.html:681
 msgid "Useful URLs"
 msgstr ""
 
-#: templates/main.html:666
+#: templates/main.html:684
 msgid "Snapshot URL"
 msgstr ""
 
-#: templates/main.html:669
+#: templates/main.html:687
 msgid ""
 "a URL that provides a JPEG image with the most recent snapshot of the "
 "camera"
 msgstr ""
 
-#: templates/main.html:675
+#: templates/main.html:693
 msgid "Streaming URL"
 msgstr ""
 
-#: templates/main.html:678
+#: templates/main.html:696
 msgid "a URL that provides a MJPEG stream of the camera"
 msgstr ""
 
-#: templates/main.html:684
+#: templates/main.html:702
 msgid "Embed URL"
 msgstr ""
 
-#: templates/main.html:687
+#: templates/main.html:705
 msgid ""
 "a URL that provides a minimal HTML document containing the camera frame, "
 "ready to be embedded"
 msgstr ""
 
-#: templates/main.html:697
+#: templates/main.html:715
 msgid "enable this if you want to capture still images (pictures)"
 msgstr ""
 
-#: templates/main.html:698
+#: templates/main.html:716
 msgid "Still Images"
 msgstr ""
 
-#: templates/main.html:703
+#: templates/main.html:721
 msgid "Image File Name"
 msgstr ""
 
-#: templates/main.html:705
+#: templates/main.html:723
 #, python-format
 msgid ""
 "sets the name pattern for the image (JPEG) files; the following special "
@@ -868,41 +926,41 @@ msgid ""
 "minute, %S = second, %q = frame number, %v = event number, / = subfolder"
 msgstr ""
 
-#: templates/main.html:708
+#: templates/main.html:726
 msgid "Image Quality"
 msgstr ""
 
-#: templates/main.html:710
+#: templates/main.html:728
 msgid ""
 "sets the JPEG image quality (higher values produce a better image quality"
 " but require more storage space)"
 msgstr ""
 
-#: templates/main.html:713
+#: templates/main.html:731
 msgid "Capture Mode"
 msgstr ""
 
-#: templates/main.html:716 templates/main.html:836
+#: templates/main.html:734 templates/main.html:854
 msgid "Motion Triggered"
 msgstr ""
 
-#: templates/main.html:717
+#: templates/main.html:735
 msgid "Motion Triggered (One Picture)"
 msgstr ""
 
-#: templates/main.html:718
+#: templates/main.html:736
 msgid "Interval Snapshots"
 msgstr ""
 
-#: templates/main.html:719
+#: templates/main.html:737
 msgid "All Frames"
 msgstr ""
 
-#: templates/main.html:720
+#: templates/main.html:738
 msgid "Manual"
 msgstr ""
 
-#: templates/main.html:723
+#: templates/main.html:741
 msgid ""
 "sets the image capture mode:\n"
 "                                    Motion Triggered = an image captured "
@@ -915,81 +973,81 @@ msgid ""
 "snapshot button"
 msgstr ""
 
-#: templates/main.html:730
+#: templates/main.html:748
 msgid "Snapshot Interval"
 msgstr ""
 
-#: templates/main.html:732
+#: templates/main.html:750
 msgid "sets the interval (in seconds) for the snapshots"
 msgstr ""
 
-#: templates/main.html:735
+#: templates/main.html:753
 msgid "Preserve Pictures"
 msgstr ""
 
-#: templates/main.html:738 templates/main.html:851
+#: templates/main.html:756 templates/main.html:869
 msgid "For One Day"
 msgstr ""
 
-#: templates/main.html:739 templates/main.html:852
+#: templates/main.html:757 templates/main.html:870
 msgid "For One Week"
 msgstr ""
 
-#: templates/main.html:740 templates/main.html:853
+#: templates/main.html:758 templates/main.html:871
 msgid "For One Month"
 msgstr ""
 
-#: templates/main.html:741 templates/main.html:854
+#: templates/main.html:759 templates/main.html:872
 msgid "For One Year"
 msgstr ""
 
-#: templates/main.html:742 templates/main.html:855
+#: templates/main.html:760 templates/main.html:873
 msgid "Forever"
 msgstr ""
 
-#: templates/main.html:743 templates/main.html:856
+#: templates/main.html:761 templates/main.html:874
 msgid "Custom"
 msgstr ""
 
-#: templates/main.html:746
+#: templates/main.html:764
 msgid ""
 "images older than the specified duration are automatically deleted to "
 "free up storage space"
 msgstr ""
 
-#: templates/main.html:749
+#: templates/main.html:767
 msgid "Pictures Lifetime"
 msgstr ""
 
-#: templates/main.html:751
+#: templates/main.html:769
 msgid ""
 "sets the number of days after which the pictures will be deleted "
 "automatically"
 msgstr ""
 
-#: templates/main.html:754
+#: templates/main.html:772
 msgid "Enable Manual Snapshots"
 msgstr ""
 
-#: templates/main.html:756
+#: templates/main.html:774
 msgid ""
 "when this is enabled, a button on the camera frame will allow you to "
 "manually take snapshots"
 msgstr ""
 
-#: templates/main.html:766
+#: templates/main.html:784
 msgid "enable this if you want to record movies"
 msgstr ""
 
-#: templates/main.html:767
+#: templates/main.html:785
 msgid "Movies"
 msgstr ""
 
-#: templates/main.html:772
+#: templates/main.html:790
 msgid "Movie File Name"
 msgstr ""
 
-#: templates/main.html:774
+#: templates/main.html:792
 #, python-format
 msgid ""
 "sets the name pattern for the movie files; the following special tokens "
@@ -997,11 +1055,11 @@ msgid ""
 " = second, %q = frame number, %v = event number, / = subfolder"
 msgstr ""
 
-#: templates/main.html:777
+#: templates/main.html:795
 msgid "Movie Passthrough"
 msgstr ""
 
-#: templates/main.html:779
+#: templates/main.html:797
 msgid ""
 "Create movie files of the motion directly from the camera. This option "
 "should reduce CPU usage but does increase memory requirements. No image "
@@ -1009,133 +1067,133 @@ msgid ""
 "on the resulting video."
 msgstr ""
 
-#: templates/main.html:782
+#: templates/main.html:800
 msgid "Movie Format"
 msgstr ""
 
-#: templates/main.html:825
+#: templates/main.html:843
 msgid ""
 "sets the movie file format; not all formats are guaranteed to work on all"
 " systems; if in doubt, test each format and select the one that works "
 "best with your video player"
 msgstr ""
 
-#: templates/main.html:828
+#: templates/main.html:846
 msgid "Movie Quality"
 msgstr ""
 
-#: templates/main.html:830
+#: templates/main.html:848
 msgid ""
 "sets the MPEG video quality (higher values produce a better video quality"
 " but require more storage space)"
 msgstr ""
 
-#: templates/main.html:833
+#: templates/main.html:851
 msgid "Recording Mode"
 msgstr ""
 
-#: templates/main.html:837
+#: templates/main.html:855
 msgid "Continuous Recording"
 msgstr ""
 
-#: templates/main.html:840
+#: templates/main.html:858
 msgid ""
 "sets the recording mode: Motion Triggered = a new movie created whenever "
 "motion is detected, Continuous Recording = one big movie file"
 msgstr ""
 
-#: templates/main.html:843
+#: templates/main.html:861
 msgid "Maximum Movie Length"
 msgstr ""
 
-#: templates/main.html:845
+#: templates/main.html:863
 msgid ""
 "sets the maximum length of movies, in seconds; if the motion event lasts "
 "longer, a new movie file is created; use 0 for unlimited length"
 msgstr ""
 
-#: templates/main.html:848
+#: templates/main.html:866
 msgid "Preserve Movies"
 msgstr ""
 
-#: templates/main.html:859
+#: templates/main.html:877
 msgid ""
 "movies older than the specified duration are automatically deleted to "
 "free up storage space"
 msgstr ""
 
-#: templates/main.html:862
+#: templates/main.html:880
 msgid "Movies Lifetime"
 msgstr ""
 
-#: templates/main.html:864
+#: templates/main.html:882
 msgid ""
 "sets the number of days after which the movies will be deleted "
 "automatically"
 msgstr ""
 
-#: templates/main.html:874
+#: templates/main.html:892
 msgid "enable this to use and configure the motion detection mechanism"
 msgstr ""
 
-#: templates/main.html:875
+#: templates/main.html:893
 msgid "Motion Detection"
 msgstr ""
 
-#: templates/main.html:880
+#: templates/main.html:898
 msgid "Frame Change Threshold"
 msgstr ""
 
-#: templates/main.html:882
+#: templates/main.html:900
 msgid ""
 "indicates the minimal percent of the image that must change between two "
 "successive frames in order for motion to be detected (smaller values give"
 " a more sensitive detection, but are prone to false positives)"
 msgstr ""
 
-#: templates/main.html:885
+#: templates/main.html:903
 msgid "Maximum Change Threshold"
 msgstr ""
 
-#: templates/main.html:886
+#: templates/main.html:904
 msgid "pixels"
 msgstr ""
 
-#: templates/main.html:887
+#: templates/main.html:905
 msgid ""
 "sets the number of pixels changed between frames above which motion is no"
 " longer triggered (0 disables the limit)"
 msgstr ""
 
-#: templates/main.html:890
+#: templates/main.html:908
 msgid "Auto Threshold Tuning"
 msgstr ""
 
-#: templates/main.html:892
+#: templates/main.html:910
 msgid "enable this to automatically adjust the threshold"
 msgstr ""
 
-#: templates/main.html:895
+#: templates/main.html:913
 msgid "Auto Noise Detection"
 msgstr ""
 
-#: templates/main.html:897
+#: templates/main.html:915
 msgid "enable this to automatically adjust the noise level"
 msgstr ""
 
-#: templates/main.html:900
+#: templates/main.html:918
 msgid "Noise Level"
 msgstr ""
 
-#: templates/main.html:902
+#: templates/main.html:920
 msgid "manually sets the noise level to a fixed value"
 msgstr ""
 
-#: templates/main.html:905
+#: templates/main.html:923
 msgid "Light Switch Detection"
 msgstr ""
 
-#: templates/main.html:907
+#: templates/main.html:925
 #, python-format
 msgid ""
 "sets the percentage of the image that needs to change so that the event "
@@ -1143,203 +1201,203 @@ msgid ""
 "function)"
 msgstr ""
 
-#: templates/main.html:910
+#: templates/main.html:928
 msgid "Despeckle Filter"
 msgstr ""
 
-#: templates/main.html:912
+#: templates/main.html:930
 msgid "enable this to apply a despeckle filter to frames before detecting motion"
 msgstr ""
 
-#: templates/main.html:918
+#: templates/main.html:936
 msgid "Motion Gap"
 msgstr ""
 
-#: templates/main.html:920
+#: templates/main.html:938
 msgid ""
 "sets the number of seconds of silence (i.e. no motion) that mark the end "
 "of a motion event"
 msgstr ""
 
-#: templates/main.html:923
+#: templates/main.html:941
 msgid "Captured Before"
 msgstr ""
 
-#: templates/main.html:925
+#: templates/main.html:943
 msgid ""
 "sets the number of frames to be captured (and included in the movie) "
 "before a motion event is detected"
 msgstr ""
 
-#: templates/main.html:928
+#: templates/main.html:946
 msgid "Captured After"
 msgstr ""
 
-#: templates/main.html:930
+#: templates/main.html:948
 msgid ""
 "sets the number of frames to be captured (and included in the movie) "
 "after the end of a motion event"
 msgstr ""
 
-#: templates/main.html:933
+#: templates/main.html:951
 msgid "Minimum Motion Frames"
 msgstr ""
 
-#: templates/main.html:935
+#: templates/main.html:953
 msgid ""
 "sets the minimum number of successive motion frames required to start a "
 "motion event"
 msgstr ""
 
-#: templates/main.html:941
+#: templates/main.html:959
 msgid "Motion Detection Mask"
 msgstr ""
 
-#: templates/main.html:943
+#: templates/main.html:961
 msgid "enables image masking for a more selective and precise motion detection"
 msgstr ""
 
-#: templates/main.html:946
+#: templates/main.html:964
 msgid "Mask Type"
 msgstr ""
 
-#: templates/main.html:949
+#: templates/main.html:967
 msgid "Smart"
 msgstr ""
 
-#: templates/main.html:950
+#: templates/main.html:968
 msgid "Editable"
 msgstr ""
 
-#: templates/main.html:953
+#: templates/main.html:971
 msgid ""
 "the smart option automatically detects regions with regular motion and "
 "dynamically builds an internal mask, while the editable mask allows you "
 "to manually build it yourself"
 msgstr ""
 
-#: templates/main.html:956
+#: templates/main.html:974
 msgid "Smart Mask Sluggishness"
 msgstr ""
 
-#: templates/main.html:958
+#: templates/main.html:976
 msgid ""
 "higher values result in a longer-lasting smart mask with a slower "
 "building process"
 msgstr ""
 
-#: templates/main.html:978
+#: templates/main.html:996
 msgid "Show Frame Changes"
 msgstr ""
 
-#: templates/main.html:980
+#: templates/main.html:998
 msgid ""
 "if this is enabled, frame changes (number of pixels as well as the "
 "changed area) are shown on the video; temporarily enable this option to "
 "help adjust the motion detection parameters"
 msgstr ""
 
-#: templates/main.html:983
+#: templates/main.html:1001
 msgid "Create Debug Media Files"
 msgstr ""
 
-#: templates/main.html:985
+#: templates/main.html:1003
 msgid ""
 "when enabled, creates special movies and pictures that help debugging "
 "motion detection problems"
 msgstr ""
 
-#: templates/main.html:994
+#: templates/main.html:1012
 msgid "enable this if you want to be notified when motion is detected"
 msgstr ""
 
-#: templates/main.html:995
+#: templates/main.html:1013
 msgid "Motion Notifications"
 msgstr ""
 
-#: templates/main.html:1000
+#: templates/main.html:1018
 msgid "Send An Email"
 msgstr ""
 
-#: templates/main.html:1002
+#: templates/main.html:1020
 msgid ""
 "enable this if you want to receive an email whenever a motion event is "
 "detected"
 msgstr ""
 
-#: templates/main.html:1005
+#: templates/main.html:1023
 msgid "Email Addresses"
 msgstr ""
 
-#: templates/main.html:1007
+#: templates/main.html:1025
 msgid ""
 "email addresses (separated by comma) that are added here will receive "
 "notifications whenever a motion event is detected"
 msgstr ""
 
-#: templates/main.html:1010
+#: templates/main.html:1028
 msgid "SMTP Server"
 msgstr ""
 
-#: templates/main.html:1012
+#: templates/main.html:1030
 msgid ""
 "enter the hostname or IP address of your SMTP server (for Gmail use "
 "smtp.gmail.com)"
 msgstr ""
 
-#: templates/main.html:1015
+#: templates/main.html:1033
 msgid "SMTP Port"
 msgstr ""
 
-#: templates/main.html:1017
+#: templates/main.html:1035
 msgid ""
 "enter the port used by your SMTP server (usually 465 for non-TLS "
 "connections and 587 for TLS connections)"
 msgstr ""
 
-#: templates/main.html:1020
+#: templates/main.html:1038
 msgid "SMTP Account"
 msgstr ""
 
-#: templates/main.html:1022
+#: templates/main.html:1040
 msgid "enter your SMTP account (normally your email address)"
 msgstr ""
 
-#: templates/main.html:1025
+#: templates/main.html:1043
 msgid "SMTP Password"
 msgstr ""
 
-#: templates/main.html:1027
+#: templates/main.html:1045
 msgid ""
 "enter your SMTP account password (for Gmail use your Google password or "
 "an app-specific generated password)"
 msgstr ""
 
-#: templates/main.html:1030
+#: templates/main.html:1048
 msgid "From Address"
 msgstr ""
 
-#: templates/main.html:1032
+#: templates/main.html:1050
 msgid ""
 "set a custom From address, if your SMTP service requires one (the first "
 "destination email address will be used if left blank)"
 msgstr ""
 
-#: templates/main.html:1035
+#: templates/main.html:1053
 msgid "Use TLS"
 msgstr ""
 
-#: templates/main.html:1037
+#: templates/main.html:1055
 msgid ""
 "enable this if your SMTP server requires TLS (Gmail needs this to be "
 "enabled)"
 msgstr ""
 
-#: templates/main.html:1040 templates/main.html:1068
+#: templates/main.html:1058 templates/main.html:1086
 msgid "Attached Pictures Time Span"
 msgstr ""
 
-#: templates/main.html:1042
+#: templates/main.html:1060
 msgid ""
 "defines the picture search time interval to use when creating email "
 "attachments (higher values generate emails with more pictures at the cost"
@@ -1347,31 +1405,31 @@ msgid ""
 "attachments; you must also enable Still Images for this to work"
 msgstr ""
 
-#: templates/main.html:1046
+#: templates/main.html:1064
 msgid "Test Email"
 msgstr ""
 
-#: templates/main.html:1047
+#: templates/main.html:1065
 msgid ""
 "click this button to test email notifications after you have filled in "
 "the required details"
 msgstr ""
 
-#: templates/main.html:1053
+#: templates/main.html:1071
 msgid "Send A Telegram Notification"
 msgstr ""
 
-#: templates/main.html:1055
+#: templates/main.html:1073
 msgid ""
 "enable this if you want to receive a telegram message whenever a motion "
 "event is detected"
 msgstr ""
 
-#: templates/main.html:1058
+#: templates/main.html:1076
 msgid "HTTP API Token"
 msgstr ""
 
-#: templates/main.html:1060
+#: templates/main.html:1078
 msgid ""
 "When creating the telegram bot chat, you will receive an API token which "
 "you need to enter here. Click the API Info button below for a step-by-"
@@ -1379,17 +1437,17 @@ msgid ""
 "created bot after your key is generated, to ensure you receive messages."
 msgstr ""
 
-#: templates/main.html:1063
+#: templates/main.html:1081
 msgid "Chat ID"
 msgstr ""
 
-#: templates/main.html:1065
+#: templates/main.html:1083
 msgid ""
 "Create a new chat to id_chatbot (@id_chatbot) and select start. The "
 "chatbot will return the number you need for this field."
 msgstr ""
 
-#: templates/main.html:1070
+#: templates/main.html:1088
 msgid ""
 "defines the picture search time interval to use when creating telegram "
 "photo attachments (higher values generate more pictures at the cost of an"
@@ -1400,21 +1458,21 @@ msgid ""
 "motion triggered, set this much lower."
 msgstr ""
 
-#: templates/main.html:1073
+#: templates/main.html:1091
 msgid "API Info"
 msgstr ""
 
-#: templates/main.html:1074
+#: templates/main.html:1092
 msgid "Test"
 msgstr ""
 
-#: templates/main.html:1082
+#: templates/main.html:1100
 msgid ""
 "enable this if you want a URL to be requested whenever a motion event is "
 "detected"
 msgstr ""
 
-#: templates/main.html:1087
+#: templates/main.html:1105
 #, python-format
 msgid ""
 "a single URL to be requested when motion is detected; the following "
@@ -1422,13 +1480,13 @@ msgid ""
 "%M = minute, %S = second, %q = frame number, %v = event number"
 msgstr ""
 
-#: templates/main.html:1107
+#: templates/main.html:1125
 msgid ""
 "enable this if you want to execute a command whenever a motion event is "
 "detected"
 msgstr ""
 
-#: templates/main.html:1112
+#: templates/main.html:1130
 #, python-format
 msgid ""
 "a command to be executed when motion is detected; multiple commands can "
@@ -1437,15 +1495,15 @@ msgid ""
 "%H = hour, %M = minute, %S = second, %q = frame number, %v = event number"
 msgstr ""
 
-#: templates/main.html:1118
+#: templates/main.html:1136
 msgid "Run An End Command"
 msgstr ""
 
-#: templates/main.html:1120
+#: templates/main.html:1138
 msgid "enable this if you want to execute a command whenever a motion event ends"
 msgstr ""
 
-#: templates/main.html:1125
+#: templates/main.html:1143
 #, python-format
 msgid ""
 "a command to be executed when motion event ends; multiple commands can be"
@@ -1454,97 +1512,97 @@ msgid ""
 "%H = hour, %M = minute, %S = second, %q = frame number"
 msgstr ""
 
-#: templates/main.html:1135
+#: templates/main.html:1153
 msgid ""
 "enable this if you want to define a weekly working schedule for motion "
 "detection"
 msgstr ""
 
-#: templates/main.html:1136
+#: templates/main.html:1154
 msgid "Working Schedule"
 msgstr ""
 
-#: templates/main.html:1141
+#: templates/main.html:1159
 msgid "Monday"
 msgstr ""
 
-#: templates/main.html:1144 templates/main.html:1153 templates/main.html:1162
-#: templates/main.html:1171 templates/main.html:1180 templates/main.html:1189
-#: templates/main.html:1198
+#: templates/main.html:1162 templates/main.html:1171 templates/main.html:1180
+#: templates/main.html:1189 templates/main.html:1198 templates/main.html:1207
+#: templates/main.html:1216
 msgid "from"
 msgstr ""
 
-#: templates/main.html:1145 templates/main.html:1154 templates/main.html:1163
-#: templates/main.html:1172 templates/main.html:1181 templates/main.html:1190
-#: templates/main.html:1199
+#: templates/main.html:1163 templates/main.html:1172 templates/main.html:1181
+#: templates/main.html:1190 templates/main.html:1199 templates/main.html:1208
+#: templates/main.html:1217
 msgid "to"
 msgstr ""
 
-#: templates/main.html:1147
+#: templates/main.html:1165
 msgid "sets the working schedule time interval for Mondays"
 msgstr ""
 
-#: templates/main.html:1150
+#: templates/main.html:1168
 msgid "Tuesday"
 msgstr ""
 
-#: templates/main.html:1156
+#: templates/main.html:1174
 msgid "sets the working schedule time interval for Tuesdays"
 msgstr ""
 
-#: templates/main.html:1159
+#: templates/main.html:1177
 msgid "Wednesday"
 msgstr ""
 
-#: templates/main.html:1165
+#: templates/main.html:1183
 msgid "sets the working schedule time interval for Wednesdays"
 msgstr ""
 
-#: templates/main.html:1168
+#: templates/main.html:1186
 msgid "Thursday"
 msgstr ""
 
-#: templates/main.html:1174
+#: templates/main.html:1192
 msgid "sets the working schedule time interval for Thursdays"
 msgstr ""
 
-#: templates/main.html:1177
+#: templates/main.html:1195
 msgid "Friday"
 msgstr ""
 
-#: templates/main.html:1183
+#: templates/main.html:1201
 msgid "sets the working schedule time interval for Friday"
 msgstr ""
 
-#: templates/main.html:1186
+#: templates/main.html:1204
 msgid "Saturday"
 msgstr ""
 
-#: templates/main.html:1192
+#: templates/main.html:1210
 msgid "sets the working schedule time interval for Saturday"
 msgstr ""
 
-#: templates/main.html:1195
+#: templates/main.html:1213
 msgid "Sunday"
 msgstr ""
 
-#: templates/main.html:1201
+#: templates/main.html:1219
 msgid "sets the working schedule time interval for Sunday"
 msgstr ""
 
-#: templates/main.html:1204
+#: templates/main.html:1222
 msgid "Detect Motion"
 msgstr ""
 
-#: templates/main.html:1207
+#: templates/main.html:1225
 msgid "During Working Schedule"
 msgstr ""
 
-#: templates/main.html:1208
+#: templates/main.html:1226
 msgid "Outside Working Schedule"
 msgstr ""
 
-#: templates/main.html:1211
+#: templates/main.html:1229
 msgid ""
 "sets whether motion detection should be active during or outside the "
 "working schedule"

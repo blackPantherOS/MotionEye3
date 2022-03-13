@@ -1066,9 +1066,7 @@ function setLayoutColumns(columns) {
         1: 'one-column',
         2: 'two-columns',
         3: 'three-columns',
-        4: 'four-columns',
-        5: 'fifth-columns',
-        6: 'six-columns'
+        4: 'four-columns'
     };
 
     getPageContainer().removeClass(Object.values(cssClasses).join(' '));
@@ -3522,16 +3520,19 @@ function runLoginDialog(retry) {
                     '<td class="login-dialog-error" colspan="100"></td>' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Username</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">'
+			+i18n.gettext("Username") + '</span></td>' +
                     '<td class="dialog-item-value"><input type="text" name="username" class="styled" id="usernameEntry" autofocus></td>' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Password</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">'
+			+i18n.gettext("Password") + '</span></td>' +
                     '<td class="dialog-item-value"><input type="password" name="password" class="styled" id="passwordEntry"></td>' +
                     '<input type="submit" style="display: none;" name="login" value="login">' +
                 '</tr>' +
                 '<tr>' +
-                    '<td class="dialog-item-label"><span class="dialog-item-label">Remember Me</span></td>' +
+                    '<td class="dialog-item-label"><span class="dialog-item-label">'
+			+i18n.gettext("Remember Me")+'</span></td>' +
                     '<td class="dialog-item-value"><input type="checkbox" name="remember" class="styled" id="rememberCheck"></td>' +
                 '</tr>' +
             '</table></form>');
@@ -3545,17 +3546,17 @@ function runLoginDialog(retry) {
 
     if (window._loginRetry) {
         errorTd.css('display', 'table-cell');
-        errorTd.html('Invalid credentials.');
+        errorTd.html(i18n.gettext('Invalid credentials.'));
     }
 
     var params = {
-        title: 'Login',
+        title: i18n.gettext('Login'),
         content: form,
         buttons: [
-            {caption: 'Cancel', isCancel: true, click: function () {
+            {caption: i18n.gettext('Cancel'), isCancel: true, click: function () {
                 tempFrame.remove();
             }},
-            {caption: 'Login', isDefault: true, click: function () {
+            {caption: i18n.gettext('Login'), isDefault: true, click: function () {
                 window.username = usernameEntry.val();
                 window.passwordHash = sha1(passwordEntry.val()).toLowerCase();
                 window._loginDialogSubmitted = true;
@@ -3793,7 +3794,7 @@ function runAddCameraDialog() {
                 '<tr class="motioneye netcam mjpeg">' +
                     '<td class="dialog-item-label"><span class="dialog-item-label">URL</span></td>' +
                     '<td class="dialog-item-value"><input type="text" class="styled" id="urlEntry" placeholder="http://example.com:8765/cams/..."></td>' +
-                    '<td><span class="help-mark" title="the camera URL (e.g. mjpeg:// or http://example.com:8080/cam/)">?</span></td>' +
+                    '<td><span class="help-mark" title="the camera URL (e.g. http://example.com:8080/cam/)">?</span></td>' +
                 '</tr>' +
                 '<tr class="motioneye netcam mjpeg">' +
                     '<td class="dialog-item-label"><span class="dialog-item-label">Username</span></td>' +

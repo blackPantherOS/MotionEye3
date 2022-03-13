@@ -1,0 +1,32 @@
+We use a json file for each language that contains the translations.
+We are uploading this file to "templates/main.html":
+
+    <script type = "text/javascript" src = "{{static_path}} js/gettext.min.js"> </script>
+    <script type = "text/javascript">
+      function Get (yourUrl) {
+          var Httpreq = new XMLHttpRequest (); // a new request
+          Httpreq.open ("GET", yourUrl, false);
+          Httpreq.send (null);
+          return Httpreq.responseText;
+      }
+      var i18n = window.i18n ();
+      var i18njson = Get ("{{static_path}} js/motioneye. {{language}}. json");
+      i18n.loadJSON (i18njson, 'messages');
+      i18n.setLocale ('{{language}}');
+    </script>
+
+And we use the function i18n.gettext given by gettext.min.js to translate, e.g. :
+     return i18n.gettext ("This field is required");
+
+The "pot" file is updated with the xgettext command, e.g. :
+        xgettext --from-code = UTF-8 --no-wrap -o locale/motioneye.js.pot static/js/*. js
+The "po" file is updated with the msgmerge command, e.g. :
+        msgmerge --no-wrap -N -U locale/en/LC_MESSAGES/motioneye.js.po locale/motioneye.js.pot
+Translations can be updated with a text editor or poedit.
+The "json" file is updated with the scripts/po2json command, e.g. :
+        ./scripts/po2json locale/en/LC_MESSAGES/motioneye.js.po static/js/motioneye.en.json
+
+The "Makefile" file allows you to automatically manage xgettext, msgmerge and po2json. Simply enter "make" after modifying a "js" or "po" file.
+
+Makefile has an "init%" rule to create a new translation
+    e.g. : use "make initro" to create the Romanian translation.

@@ -31,7 +31,9 @@ from tornado.web import Application
 import handlers
 import settings
 import template
+import locale
 
+language = locale.getlocale()[0].split('_')[0]
 
 _PID_FILE = 'motioneye.pid'
 _CURRENT_PICTURE_REGEX = re.compile('^/picture/\d+/current')
@@ -359,7 +361,7 @@ def run():
     import wsswitch
 
     configure_signals()
-    logging.info('hello! this is motionEye server %s' % motioneye.VERSION)
+    logging.info(_('hello! this is motionEye3 server %s') % motioneye.VERSION)
 
     test_requirements()
     make_media_folders()
@@ -374,29 +376,31 @@ def run():
 
     if settings.CLEANUP_INTERVAL:
         cleanup.start()
-        logging.info('cleanup started')
+        logging.info(_('cleanup started'))
         
     wsswitch.start()
-    logging.info('wsswitch started')
+    logging.info(_('wsswitch started'))
 
     tasks.start()
-    logging.info('tasks started')
+    logging.info(_('tasks started'))
 
     if settings.MJPG_CLIENT_TIMEOUT:
         mjpgclient.start()
-        logging.info('mjpg client garbage collector started')
+        logging.info(_('mjpg client garbage collector started'))
 
     if settings.SMB_SHARES:
         smbctl.start()
-        logging.info('smb mounts started')
+        logging.info(_('smb mounts started'))
 
     template.add_context('static_path', 'static/')
-    
+    logging.info(_("server language: %s") % language)
+    template.add_context('language', language)
+
     application = Application(handler_mapping, debug=False, log_function=_log_request,
                               static_path=settings.STATIC_PATH, static_url_prefix='/static/')
     
     application.listen(settings.PORT, settings.LISTEN)
-    logging.info('server started')
+    logging.info(_('server started'))
     
     io_loop = IOLoop.instance()
     # we need to reset the loop's PID to fix PID checks when running in daemon mode
